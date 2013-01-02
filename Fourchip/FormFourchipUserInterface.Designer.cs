@@ -45,21 +45,9 @@
             this.groupBoxTemp = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxBrightness = new System.Windows.Forms.GroupBox();
-            this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
-            this.ipAddressControl2 = new IPAddressControlLib.IPAddressControl();
-            this.ipAddressControl3 = new IPAddressControlLib.IPAddressControl();
-            this.ipAddressControl4 = new IPAddressControlLib.IPAddressControl();
-            this.ipAddressControl5 = new IPAddressControlLib.IPAddressControl();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
-            this.groupBoxBrightness.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNICpc
@@ -130,11 +118,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.ipAddressControl5);
-            this.groupBox1.Controls.Add(this.ipAddressControl4);
-            this.groupBox1.Controls.Add(this.ipAddressControl3);
-            this.groupBox1.Controls.Add(this.ipAddressControl2);
-            this.groupBox1.Controls.Add(this.ipAddressControl1);
             this.groupBox1.Controls.Add(this.buttonUpdateNIC);
             this.groupBox1.Controls.Add(this.labelAddress);
             this.groupBox1.Controls.Add(this.labelMask);
@@ -188,8 +171,6 @@
             // 
             // groupBoxTemp
             // 
-            this.groupBoxTemp.Controls.Add(this.pictureBox2);
-            this.groupBoxTemp.Controls.Add(this.pictureBox1);
             this.groupBoxTemp.Controls.Add(this.label1);
             this.groupBoxTemp.Location = new System.Drawing.Point(319, 51);
             this.groupBoxTemp.Name = "groupBoxTemp";
@@ -210,112 +191,12 @@
             // 
             // groupBoxBrightness
             // 
-            this.groupBoxBrightness.Controls.Add(this.pictureBox3);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
             this.groupBoxBrightness.Size = new System.Drawing.Size(113, 179);
             this.groupBoxBrightness.TabIndex = 16;
             this.groupBoxBrightness.TabStop = false;
             this.groupBoxBrightness.Text = "Brightness";
-            // 
-            // ipAddressControl1
-            // 
-            this.ipAddressControl1.AllowInternalTab = false;
-            this.ipAddressControl1.AutoHeight = true;
-            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl1.Location = new System.Drawing.Point(98, 52);
-            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl1.Name = "ipAddressControl1";
-            this.ipAddressControl1.ReadOnly = false;
-            this.ipAddressControl1.Size = new System.Drawing.Size(174, 20);
-            this.ipAddressControl1.TabIndex = 21;
-            this.ipAddressControl1.Text = "...";
-            // 
-            // ipAddressControl2
-            // 
-            this.ipAddressControl2.AllowInternalTab = false;
-            this.ipAddressControl2.AutoHeight = true;
-            this.ipAddressControl2.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl2.Location = new System.Drawing.Point(98, 78);
-            this.ipAddressControl2.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl2.Name = "ipAddressControl2";
-            this.ipAddressControl2.ReadOnly = false;
-            this.ipAddressControl2.Size = new System.Drawing.Size(174, 20);
-            this.ipAddressControl2.TabIndex = 22;
-            this.ipAddressControl2.Text = "...";
-            // 
-            // ipAddressControl3
-            // 
-            this.ipAddressControl3.AllowInternalTab = false;
-            this.ipAddressControl3.AutoHeight = true;
-            this.ipAddressControl3.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl3.Location = new System.Drawing.Point(98, 104);
-            this.ipAddressControl3.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl3.Name = "ipAddressControl3";
-            this.ipAddressControl3.ReadOnly = false;
-            this.ipAddressControl3.Size = new System.Drawing.Size(174, 20);
-            this.ipAddressControl3.TabIndex = 23;
-            this.ipAddressControl3.Text = "...";
-            // 
-            // ipAddressControl4
-            // 
-            this.ipAddressControl4.AllowInternalTab = false;
-            this.ipAddressControl4.AutoHeight = true;
-            this.ipAddressControl4.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl4.Location = new System.Drawing.Point(98, 130);
-            this.ipAddressControl4.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl4.Name = "ipAddressControl4";
-            this.ipAddressControl4.ReadOnly = false;
-            this.ipAddressControl4.Size = new System.Drawing.Size(174, 20);
-            this.ipAddressControl4.TabIndex = 24;
-            this.ipAddressControl4.Text = "...";
-            // 
-            // ipAddressControl5
-            // 
-            this.ipAddressControl5.AllowInternalTab = false;
-            this.ipAddressControl5.AutoHeight = true;
-            this.ipAddressControl5.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl5.Location = new System.Drawing.Point(98, 156);
-            this.ipAddressControl5.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl5.Name = "ipAddressControl5";
-            this.ipAddressControl5.ReadOnly = false;
-            this.ipAddressControl5.Size = new System.Drawing.Size(174, 20);
-            this.ipAddressControl5.TabIndex = 25;
-            this.ipAddressControl5.Text = "...";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(6, 42);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 111);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // FormFourchipUserInterface
             // 
@@ -339,10 +220,6 @@
             this.statusStrip1.PerformLayout();
             this.groupBoxTemp.ResumeLayout(false);
             this.groupBoxTemp.PerformLayout();
-            this.groupBoxBrightness.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,13 +243,5 @@
         private System.Windows.Forms.GroupBox groupBoxTemp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxBrightness;
-        private IPAddressControlLib.IPAddressControl ipAddressControl5;
-        private IPAddressControlLib.IPAddressControl ipAddressControl4;
-        private IPAddressControlLib.IPAddressControl ipAddressControl3;
-        private IPAddressControlLib.IPAddressControl ipAddressControl2;
-        private IPAddressControlLib.IPAddressControl ipAddressControl1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

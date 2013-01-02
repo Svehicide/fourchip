@@ -75,13 +75,6 @@
             resources.ApplyResources(this.labelBPS, "labelBPS");
             this.labelBPS.Name = "labelBPS";
             // 
-            // pictureBoxRFID
-            // 
-            this.pictureBoxRFID.Image = global::Fourchip.Properties.Resources.universal_contactless_card_symbol;
-            resources.ApplyResources(this.pictureBoxRFID, "pictureBoxRFID");
-            this.pictureBoxRFID.Name = "pictureBoxRFID";
-            this.pictureBoxRFID.TabStop = false;
-            // 
             // FormFourchipScan
             // 
             resources.ApplyResources(this, "$this");
