@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace Fourchip
 {
@@ -15,7 +16,14 @@ namespace Fourchip
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            try
+            {
+                Application.Run(new FormFourchipScan());
+            }
+            catch
+            {
+                System.Windows.Forms.MessageBox.Show("Arrêt de l'application");
+            }
         }
     }
 }

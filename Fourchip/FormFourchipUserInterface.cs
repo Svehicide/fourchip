@@ -9,11 +9,15 @@ using System.Windows.Forms;
 
 namespace Fourchip
 {
-    public partial class Form1 : Form
+    public partial class FormFourchipUserInterface : Form
     {
-        public Form1()
+        Form owner;
+
+        public FormFourchipUserInterface(Form o)
         {
             InitializeComponent();
+
+            owner = o;
         }
     }
 }
