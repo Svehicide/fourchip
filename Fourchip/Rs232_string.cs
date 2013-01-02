@@ -22,5 +22,7 @@ namespace Fourchip
         public const String LIGHT = "#05@";                     //#05@lightValue
         
         public const String LED = "#06@";                       //#06@ledFreq
+
+        public const String CHRONO = "#07@";                    //#07@timeInSeconds
     }
 }
