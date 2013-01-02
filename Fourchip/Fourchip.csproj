@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IPAddressControlLib">
-      <HintPath>..\..\..\..\VS10-IPAddressControlLib-Rev55 (1)\bin\Release\IPAddressControlLib.dll</HintPath>
+      <HintPath>Resources\IPcontrol\IPAddressControlLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -102,7 +102,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_darkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_darkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universal_contactless_card_symbol.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

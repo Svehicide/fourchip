@@ -35,8 +35,8 @@
             this.comboBoxCOMPorts = new System.Windows.Forms.ComboBox();
             this.comboBoxBaudRate = new System.Windows.Forms.ComboBox();
             this.labelBPS = new System.Windows.Forms.Label();
-            this.pictureBoxRFID = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRFID)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // serialPort
@@ -75,18 +75,24 @@
             resources.ApplyResources(this.labelBPS, "labelBPS");
             this.labelBPS.Name = "labelBPS";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // FormFourchipScan
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelBPS);
             this.Controls.Add(this.comboBoxBaudRate);
             this.Controls.Add(this.comboBoxCOMPorts);
             this.Controls.Add(this.labelScanRFID);
-            this.Controls.Add(this.pictureBoxRFID);
             this.MaximizeBox = false;
             this.Name = "FormFourchipScan";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRFID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,11 +101,11 @@
         #endregion
 
         private System.IO.Ports.SerialPort serialPort;
-        private System.Windows.Forms.PictureBox pictureBoxRFID;
         private System.Windows.Forms.Label labelScanRFID;
         private System.Windows.Forms.ComboBox comboBoxCOMPorts;
         private System.Windows.Forms.ComboBox comboBoxBaudRate;
         private System.Windows.Forms.Label labelBPS;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

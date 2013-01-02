@@ -66,5 +66,10 @@ namespace Fourchip
         {
 
         }
+
+        private void ipAddressControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

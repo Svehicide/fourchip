@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFourchipUserInterface));
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
             this.labelNICpc = new System.Windows.Forms.Label();
             this.comboBoxNIC = new System.Windows.Forms.ComboBox();
@@ -43,11 +44,18 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBoxTemp = new System.Windows.Forms.GroupBox();
+            this.pictureBoxArrowDown = new System.Windows.Forms.PictureBox();
+            this.pictureBoxArrowUp = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxBrightness = new System.Windows.Forms.GroupBox();
+            this.pictureBoxBrightness = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowUp)).BeginInit();
+            this.groupBoxBrightness.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrightness)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNICpc
@@ -171,6 +179,8 @@
             // 
             // groupBoxTemp
             // 
+            this.groupBoxTemp.Controls.Add(this.pictureBoxArrowDown);
+            this.groupBoxTemp.Controls.Add(this.pictureBoxArrowUp);
             this.groupBoxTemp.Controls.Add(this.label1);
             this.groupBoxTemp.Location = new System.Drawing.Point(319, 51);
             this.groupBoxTemp.Name = "groupBoxTemp";
@@ -178,6 +188,24 @@
             this.groupBoxTemp.TabIndex = 15;
             this.groupBoxTemp.TabStop = false;
             this.groupBoxTemp.Text = "Temperature";
+            // 
+            // pictureBoxArrowDown
+            // 
+            this.pictureBoxArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxArrowDown.Image")));
+            this.pictureBoxArrowDown.Location = new System.Drawing.Point(7, 113);
+            this.pictureBoxArrowDown.Name = "pictureBoxArrowDown";
+            this.pictureBoxArrowDown.Size = new System.Drawing.Size(100, 60);
+            this.pictureBoxArrowDown.TabIndex = 2;
+            this.pictureBoxArrowDown.TabStop = false;
+            // 
+            // pictureBoxArrowUp
+            // 
+            this.pictureBoxArrowUp.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxArrowUp.Image")));
+            this.pictureBoxArrowUp.Location = new System.Drawing.Point(7, 20);
+            this.pictureBoxArrowUp.Name = "pictureBoxArrowUp";
+            this.pictureBoxArrowUp.Size = new System.Drawing.Size(100, 60);
+            this.pictureBoxArrowUp.TabIndex = 1;
+            this.pictureBoxArrowUp.TabStop = false;
             // 
             // label1
             // 
@@ -191,12 +219,22 @@
             // 
             // groupBoxBrightness
             // 
+            this.groupBoxBrightness.Controls.Add(this.pictureBoxBrightness);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
             this.groupBoxBrightness.Size = new System.Drawing.Size(113, 179);
             this.groupBoxBrightness.TabIndex = 16;
             this.groupBoxBrightness.TabStop = false;
             this.groupBoxBrightness.Text = "Brightness";
+            // 
+            // pictureBoxBrightness
+            // 
+            this.pictureBoxBrightness.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBrightness.Image")));
+            this.pictureBoxBrightness.Location = new System.Drawing.Point(6, 42);
+            this.pictureBoxBrightness.Name = "pictureBoxBrightness";
+            this.pictureBoxBrightness.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxBrightness.TabIndex = 0;
+            this.pictureBoxBrightness.TabStop = false;
             // 
             // FormFourchipUserInterface
             // 
@@ -220,6 +258,10 @@
             this.statusStrip1.PerformLayout();
             this.groupBoxTemp.ResumeLayout(false);
             this.groupBoxTemp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowUp)).EndInit();
+            this.groupBoxBrightness.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrightness)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +285,8 @@
         private System.Windows.Forms.GroupBox groupBoxTemp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxBrightness;
+        private System.Windows.Forms.PictureBox pictureBoxArrowDown;
+        private System.Windows.Forms.PictureBox pictureBoxArrowUp;
+        private System.Windows.Forms.PictureBox pictureBoxBrightness;
     }
 }
