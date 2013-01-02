@@ -46,30 +46,5 @@ namespace Fourchip
                 this.Dispose();
                 Application.Restart();
         }
-
-        private void labelDNS2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDNS1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelAddress_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelGW_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ipAddressControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

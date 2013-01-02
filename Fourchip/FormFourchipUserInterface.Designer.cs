@@ -92,7 +92,6 @@
             this.labelGW.Size = new System.Drawing.Size(55, 13);
             this.labelGW.TabIndex = 6;
             this.labelGW.Text = "Gateway :";
-            this.labelGW.Click += new System.EventHandler(this.labelGW_Click);
             // 
             // labelDNS1
             // 
@@ -102,7 +101,6 @@
             this.labelDNS1.Size = new System.Drawing.Size(73, 13);
             this.labelDNS1.TabIndex = 7;
             this.labelDNS1.Text = "Primary DNS :";
-            this.labelDNS1.Click += new System.EventHandler(this.labelDNS1_Click);
             // 
             // labelDNS2
             // 
@@ -112,7 +110,6 @@
             this.labelDNS2.Size = new System.Drawing.Size(90, 13);
             this.labelDNS2.TabIndex = 8;
             this.labelDNS2.Text = "Secondary DNS :";
-            this.labelDNS2.Click += new System.EventHandler(this.labelDNS2_Click);
             // 
             // buttonDisconnected
             // 
@@ -158,7 +155,6 @@
             this.labelAddress.Size = new System.Drawing.Size(63, 13);
             this.labelAddress.TabIndex = 4;
             this.labelAddress.Text = "IP address :";
-            this.labelAddress.Click += new System.EventHandler(this.labelAddress_Click);
             // 
             // toolStripStatusLabel1
             // 
