@@ -52,6 +52,7 @@
             // 
             // comboBoxCOMPorts
             // 
+            this.comboBoxCOMPorts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCOMPorts.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCOMPorts, "comboBoxCOMPorts");
             this.comboBoxCOMPorts.Name = "comboBoxCOMPorts";
@@ -59,6 +60,7 @@
             // 
             // comboBoxBaudRate
             // 
+            this.comboBoxBaudRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBaudRate.FormattingEnabled = true;
             this.comboBoxBaudRate.Items.AddRange(new object[] {
             resources.GetString("comboBoxBaudRate.Items"),

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net.NetworkInformation;
 
 namespace Fourchip
 {
@@ -19,6 +20,11 @@ namespace Fourchip
 
             owner = o;
 
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                comboBoxNIC.Items.Add(nic.Name);
+            }
+          
             serialPort.PortName = com;
             serialPort.BaudRate = int.Parse(br);
 
@@ -45,6 +51,18 @@ namespace Fourchip
                 serialPort.Write("#99@");
                 this.Dispose();
                 Application.Restart();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxLEDstate.Checked == true)
+            {
+                frequencySpinner.Enabled = true;
+            }
+            else
+            {
+                frequencySpinner.Enabled = false;
+            }
         }
     }
 }
