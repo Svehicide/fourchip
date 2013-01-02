@@ -22,7 +22,7 @@ namespace Fourchip
             }
             catch
             {
-                System.Windows.Forms.MessageBox.Show("Arrêt de l'application");
+                System.Windows.Forms.MessageBox.Show("Exiting application");
             }
         }
     }

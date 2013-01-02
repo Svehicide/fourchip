@@ -133,16 +133,16 @@
     <value>NoControl</value>
   </data>
   <data name="labelScanRFID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 27</value>
+    <value>250, 27</value>
   </data>
   <data name="labelScanRFID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 27</value>
+    <value>213, 27</value>
   </data>
   <data name="labelScanRFID.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="labelScanRFID.Text" xml:space="preserve">
-    <value>Veuillez scanner votre carte</value>
+    <value>Please, scan  your card</value>
   </data>
   <data name="&gt;&gt;labelScanRFID.Name" xml:space="preserve">
     <value>labelScanRFID</value>

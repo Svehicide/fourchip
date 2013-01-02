@@ -91,6 +91,7 @@
             this.Controls.Add(this.comboBoxCOMPorts);
             this.Controls.Add(this.labelScanRFID);
             this.Controls.Add(this.pictureBoxRFID);
+            this.MaximizeBox = false;
             this.Name = "FormFourchipScan";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRFID)).EndInit();
             this.ResumeLayout(false);

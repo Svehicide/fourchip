@@ -50,12 +50,12 @@
             // FormFourchipLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(745, 310);
             this.Controls.Add(this.labelWelcome);
             this.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FormFourchipLogin";
             this.Text = "Fourchip project";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormFourchipLogin_FormClosing);

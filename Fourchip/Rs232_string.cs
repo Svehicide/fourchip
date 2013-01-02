@@ -8,7 +8,7 @@ namespace Fourchip
     class Rs232_string
     {
         public const String HELLO = "#00@";                     //#00@
-        public const String SCAN = "#01@";                      //#01@Firstname;Name
+        public const String SCAN = "#01@";                      //#01@Firstname Name
         public const String LOGIN = "#02@";                     //#02@1 ( OK ) ou #02@0 ( NOT OK ) ou #02@2 ( TIME OUT )
         public const String GOODBYE = "#99@";                   //#99@
 
@@ -24,6 +24,6 @@ namespace Fourchip
         
         public const String LED = "#06@";                       //#06@ledFreq
 
-        public const String CHRONO = "#07@";                    //#07@timeInSeconds
+        public const String CHRONO = "#07@";                    //#07@hh;mm
     }
 }

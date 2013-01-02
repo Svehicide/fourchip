@@ -30,7 +30,7 @@ namespace Fourchip
             }
             catch
             {
-               System.Windows.Forms.MessageBox.Show("Aucun port COM disponible.\n\nVeuillez vérifier que votre carte est bien reconnue par votre ordinateur");
+               System.Windows.Forms.MessageBox.Show("No COM port available.\n\nPlease check the connection between your computer and the card");
                this.Close();
             }
             
@@ -93,7 +93,7 @@ namespace Fourchip
             }
             catch
             {
-                System.Windows.Forms.MessageBox.Show("Votre port COM ("+serialPort.PortName+") semble être utilisé. Veuillez vérifier qu'il est libre.");
+                System.Windows.Forms.MessageBox.Show("Your COM port seems to be in use ("+serialPort.PortName+"). Please check its availability.");
             }
             
             
@@ -113,12 +113,10 @@ namespace Fourchip
                 {
                     //removing the code part
                     String infoString = data.Substring(4);
-                    //splitting the informations into individual strings
-                    String[] infos = infoString.Split(';');
-
+                    
                     //generating a new window
                     serialPort.Close();
-                    FormFourchipLogin formFourchipLogin = new FormFourchipLogin(infos[0], infos[1], this, serialPort.PortName, serialPort.BaudRate.ToString());
+                    FormFourchipLogin formFourchipLogin = new FormFourchipLogin(infoString, this, serialPort.PortName, serialPort.BaudRate.ToString());
                     this.Hide();
                     formFourchipLogin.ShowDialog();
                 }
