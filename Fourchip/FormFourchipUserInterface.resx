@@ -123,14 +123,11 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>119, 17</value>
   </metadata>
-  <metadata name="statusStrip1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxArrowDown.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAAA8CAYAAACQPx/OAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAXlSURBVHhe7ZtNiBxFFIC7JxIT
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAXlSURBVHhe7ZtNiBxFFIC7JxIT
         QXYhoCZhe/aQoIQgCMGDoLAniT8gRAJ6ioKJiIgYiCKKnjxEETUbUURFDx5EXVERBEVB8CAoGBARoghC
         4sEfRCEGf+L3urtmprvfzPZPdXXtzB6+qu7XVa9evTc987q6Jljuhw/D28f74SHYfbwfbFxeDAOOoRfX
         y/0gxciRLQaD43ybZ42MNoM+kdSmzWhfzge6iuON6hr2ybZJznvxsZEn7VJ9Y/rK2ANZPOeR80y7EdmI
@@ -162,7 +159,7 @@
   <data name="pictureBoxArrowUp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAAA8CAYAAACQPx/OAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw4AAAsOAUC+4UEAAA8USURBVHhe7Zx3XFRXFsePApq1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACwwAAAsMAT9AIsgAAA8USURBVHhe7Zx3XFRXFsePApq1
         oYLRjZG4a2KKurrRJJvNmriy0WRFV7ERC0VGEFARpLmACiIoCKjADDDA0IcOQxGkF5GqgEgRQel1AAEV
         W8Ke+yIJyY4y4jA8Y/74fvjMZ4b77j2/e8q9774HkXmRwO9th977d6Drbid0Ivy+Tujo7YD2njZo62ml
         NQ8fPwA7nq2mirOyaXpZOsRejaM/hTEQUxANvPwoyv7hOeEQejkUgrKD4TmC8KGjp4O2tPe0wwMUI74o
@@ -482,7 +479,4 @@
         q/c8JuuRyDr4lF4H/ZQgHukY/qqAbGX/F6elkqbD0b8qAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

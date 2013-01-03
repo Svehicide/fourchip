@@ -42,10 +42,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBoxDNS2byte4 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS2byte3 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS2byte2 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS2byte1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -87,50 +87,55 @@
             this.groupBoxCARDnic = new System.Windows.Forms.GroupBox();
             this.buttonUpdateNICcard = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.labelIPcard = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.labelDNS2card = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.labelDNS1card = new System.Windows.Forms.Label();
+            this.textBoxDNS2cardbyte4 = new System.Windows.Forms.TextBox();
+            this.labelGWcard = new System.Windows.Forms.Label();
+            this.textBoxDNS2cardbyte3 = new System.Windows.Forms.TextBox();
+            this.labelMASKcard = new System.Windows.Forms.Label();
+            this.textBoxDNS2cardbyte2 = new System.Windows.Forms.TextBox();
+            this.textBoxIPcardbyte1 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS2cardbyte1 = new System.Windows.Forms.TextBox();
+            this.textBoxIPcardbyte2 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBoxIPcardbyte3 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBoxIPcardbyte4 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS1cardbyte4 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS1cardbyte3 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS1cardbyte2 = new System.Windows.Forms.TextBox();
+            this.textBoxMASKcardbyte1 = new System.Windows.Forms.TextBox();
+            this.textBoxDNS1cardbyte1 = new System.Windows.Forms.TextBox();
+            this.textBoxMASKcardbyte2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBoxMASKcardbyte3 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBoxMASKcardbyte4 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxGWcardbyte4 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxGWcardbyte3 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBoxGWcardbyte2 = new System.Windows.Forms.TextBox();
+            this.textBoxGWcardbyte1 = new System.Windows.Forms.TextBox();
             this.groupBoxLEDstate = new System.Windows.Forms.GroupBox();
             this.frequencySpinner = new System.Windows.Forms.NumericUpDown();
             this.labelLEDfreq = new System.Windows.Forms.Label();
             this.labelLEDstate = new System.Windows.Forms.Label();
             this.checkBoxLEDstate = new System.Windows.Forms.CheckBox();
+            this.groupBoxAccount = new System.Windows.Forms.GroupBox();
+            this.buttonPasswordChange = new System.Windows.Forms.Button();
+            this.groupBoxCMD = new System.Windows.Forms.GroupBox();
+            this.buttonConnecTest = new System.Windows.Forms.Button();
+            this.labelICMPinfos = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
@@ -141,6 +146,8 @@
             this.groupBoxCARDnic.SuspendLayout();
             this.groupBoxLEDstate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.frequencySpinner)).BeginInit();
+            this.groupBoxAccount.SuspendLayout();
+            this.groupBoxCMD.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNICpc
@@ -158,8 +165,9 @@
             this.comboBoxNIC.FormattingEnabled = true;
             this.comboBoxNIC.Location = new System.Drawing.Point(98, 16);
             this.comboBoxNIC.Name = "comboBoxNIC";
-            this.comboBoxNIC.Size = new System.Drawing.Size(174, 21);
+            this.comboBoxNIC.Size = new System.Drawing.Size(190, 21);
             this.comboBoxNIC.TabIndex = 3;
+            this.comboBoxNIC.SelectedIndexChanged += new System.EventHandler(this.comboBoxNIC_SelectedIndexChanged);
             // 
             // labelMask
             // 
@@ -212,10 +220,10 @@
             this.groupBoxPCnic.Controls.Add(this.label14);
             this.groupBoxPCnic.Controls.Add(this.label15);
             this.groupBoxPCnic.Controls.Add(this.label16);
-            this.groupBoxPCnic.Controls.Add(this.textBox16);
-            this.groupBoxPCnic.Controls.Add(this.textBox17);
-            this.groupBoxPCnic.Controls.Add(this.textBox18);
             this.groupBoxPCnic.Controls.Add(this.textBoxDNS2byte4);
+            this.groupBoxPCnic.Controls.Add(this.textBoxDNS2byte3);
+            this.groupBoxPCnic.Controls.Add(this.textBoxDNS2byte2);
+            this.groupBoxPCnic.Controls.Add(this.textBoxDNS2byte1);
             this.groupBoxPCnic.Controls.Add(this.label11);
             this.groupBoxPCnic.Controls.Add(this.label12);
             this.groupBoxPCnic.Controls.Add(this.label13);
@@ -286,41 +294,41 @@
             this.label16.TabIndex = 48;
             this.label16.Text = ".";
             // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(257, 156);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(31, 20);
-            this.textBox16.TabIndex = 52;
-            this.textBox16.Text = "4";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(204, 156);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(31, 20);
-            this.textBox17.TabIndex = 51;
-            this.textBox17.Text = "4";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(151, 156);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(31, 20);
-            this.textBox18.TabIndex = 50;
-            this.textBox18.Text = "8";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBoxDNS2byte4
             // 
-            this.textBoxDNS2byte4.Location = new System.Drawing.Point(98, 156);
+            this.textBoxDNS2byte4.Location = new System.Drawing.Point(257, 156);
             this.textBoxDNS2byte4.Name = "textBoxDNS2byte4";
             this.textBoxDNS2byte4.Size = new System.Drawing.Size(31, 20);
-            this.textBoxDNS2byte4.TabIndex = 49;
-            this.textBoxDNS2byte4.Text = "8";
+            this.textBoxDNS2byte4.TabIndex = 52;
+            this.textBoxDNS2byte4.Text = "4";
             this.textBoxDNS2byte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDNS2byte3
+            // 
+            this.textBoxDNS2byte3.Location = new System.Drawing.Point(204, 156);
+            this.textBoxDNS2byte3.Name = "textBoxDNS2byte3";
+            this.textBoxDNS2byte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2byte3.TabIndex = 51;
+            this.textBoxDNS2byte3.Text = "4";
+            this.textBoxDNS2byte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDNS2byte2
+            // 
+            this.textBoxDNS2byte2.Location = new System.Drawing.Point(151, 156);
+            this.textBoxDNS2byte2.Name = "textBoxDNS2byte2";
+            this.textBoxDNS2byte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2byte2.TabIndex = 50;
+            this.textBoxDNS2byte2.Text = "8";
+            this.textBoxDNS2byte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDNS2byte1
+            // 
+            this.textBoxDNS2byte1.Location = new System.Drawing.Point(98, 156);
+            this.textBoxDNS2byte1.Name = "textBoxDNS2byte1";
+            this.textBoxDNS2byte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2byte1.TabIndex = 49;
+            this.textBoxDNS2byte1.Text = "8";
+            this.textBoxDNS2byte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -582,6 +590,7 @@
             this.buttonUpdateNICpc.TabIndex = 20;
             this.buttonUpdateNICpc.Text = "Update";
             this.buttonUpdateNICpc.UseVisualStyleBackColor = true;
+            this.buttonUpdateNICpc.Click += new System.EventHandler(this.buttonUpdateNICpc_Click);
             // 
             // labelAddress
             // 
@@ -602,7 +611,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 559);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 671);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(577, 22);
             this.statusStrip1.SizingGrip = false;
@@ -672,45 +681,45 @@
             // 
             this.groupBoxCARDnic.Controls.Add(this.buttonUpdateNICcard);
             this.groupBoxCARDnic.Controls.Add(this.label17);
-            this.groupBoxCARDnic.Controls.Add(this.label32);
+            this.groupBoxCARDnic.Controls.Add(this.labelIPcard);
             this.groupBoxCARDnic.Controls.Add(this.label18);
-            this.groupBoxCARDnic.Controls.Add(this.label36);
+            this.groupBoxCARDnic.Controls.Add(this.labelDNS2card);
             this.groupBoxCARDnic.Controls.Add(this.label19);
-            this.groupBoxCARDnic.Controls.Add(this.label35);
-            this.groupBoxCARDnic.Controls.Add(this.textBox1);
-            this.groupBoxCARDnic.Controls.Add(this.label34);
-            this.groupBoxCARDnic.Controls.Add(this.textBox2);
-            this.groupBoxCARDnic.Controls.Add(this.label33);
-            this.groupBoxCARDnic.Controls.Add(this.textBox3);
-            this.groupBoxCARDnic.Controls.Add(this.textBox23);
-            this.groupBoxCARDnic.Controls.Add(this.textBox4);
-            this.groupBoxCARDnic.Controls.Add(this.textBox22);
+            this.groupBoxCARDnic.Controls.Add(this.labelDNS1card);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS2cardbyte4);
+            this.groupBoxCARDnic.Controls.Add(this.labelGWcard);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS2cardbyte3);
+            this.groupBoxCARDnic.Controls.Add(this.labelMASKcard);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS2cardbyte2);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxIPcardbyte1);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS2cardbyte1);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxIPcardbyte2);
             this.groupBoxCARDnic.Controls.Add(this.label20);
-            this.groupBoxCARDnic.Controls.Add(this.textBox21);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxIPcardbyte3);
             this.groupBoxCARDnic.Controls.Add(this.label21);
-            this.groupBoxCARDnic.Controls.Add(this.textBox20);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxIPcardbyte4);
             this.groupBoxCARDnic.Controls.Add(this.label22);
             this.groupBoxCARDnic.Controls.Add(this.label31);
-            this.groupBoxCARDnic.Controls.Add(this.textBox5);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS1cardbyte4);
             this.groupBoxCARDnic.Controls.Add(this.label30);
-            this.groupBoxCARDnic.Controls.Add(this.textBox6);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS1cardbyte3);
             this.groupBoxCARDnic.Controls.Add(this.label29);
-            this.groupBoxCARDnic.Controls.Add(this.textBox7);
-            this.groupBoxCARDnic.Controls.Add(this.textBox19);
-            this.groupBoxCARDnic.Controls.Add(this.textBox8);
-            this.groupBoxCARDnic.Controls.Add(this.textBox15);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS1cardbyte2);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxMASKcardbyte1);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxDNS1cardbyte1);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxMASKcardbyte2);
             this.groupBoxCARDnic.Controls.Add(this.label23);
-            this.groupBoxCARDnic.Controls.Add(this.textBox14);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxMASKcardbyte3);
             this.groupBoxCARDnic.Controls.Add(this.label24);
-            this.groupBoxCARDnic.Controls.Add(this.textBox13);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxMASKcardbyte4);
             this.groupBoxCARDnic.Controls.Add(this.label25);
             this.groupBoxCARDnic.Controls.Add(this.label28);
-            this.groupBoxCARDnic.Controls.Add(this.textBox9);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxGWcardbyte4);
             this.groupBoxCARDnic.Controls.Add(this.label27);
-            this.groupBoxCARDnic.Controls.Add(this.textBox10);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxGWcardbyte3);
             this.groupBoxCARDnic.Controls.Add(this.label26);
-            this.groupBoxCARDnic.Controls.Add(this.textBox11);
-            this.groupBoxCARDnic.Controls.Add(this.textBox12);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxGWcardbyte2);
+            this.groupBoxCARDnic.Controls.Add(this.textBoxGWcardbyte1);
             this.groupBoxCARDnic.Location = new System.Drawing.Point(12, 236);
             this.groupBoxCARDnic.Name = "groupBoxCARDnic";
             this.groupBoxCARDnic.Size = new System.Drawing.Size(301, 195);
@@ -726,6 +735,7 @@
             this.buttonUpdateNICcard.TabIndex = 55;
             this.buttonUpdateNICcard.Text = "Update";
             this.buttonUpdateNICcard.UseVisualStyleBackColor = true;
+            this.buttonUpdateNICcard.Click += new System.EventHandler(this.buttonUpdateNICcard_Click);
             // 
             // label17
             // 
@@ -736,14 +746,14 @@
             this.label17.TabIndex = 94;
             this.label17.Text = ".";
             // 
-            // label32
+            // labelIPcard
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 31);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(63, 13);
-            this.label32.TabIndex = 55;
-            this.label32.Text = "IP address :";
+            this.labelIPcard.AutoSize = true;
+            this.labelIPcard.Location = new System.Drawing.Point(6, 31);
+            this.labelIPcard.Name = "labelIPcard";
+            this.labelIPcard.Size = new System.Drawing.Size(63, 13);
+            this.labelIPcard.TabIndex = 55;
+            this.labelIPcard.Text = "IP address :";
             // 
             // label18
             // 
@@ -754,14 +764,14 @@
             this.label18.TabIndex = 93;
             this.label18.Text = ".";
             // 
-            // label36
+            // labelDNS2card
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 135);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(90, 13);
-            this.label36.TabIndex = 59;
-            this.label36.Text = "Secondary DNS :";
+            this.labelDNS2card.AutoSize = true;
+            this.labelDNS2card.Location = new System.Drawing.Point(6, 135);
+            this.labelDNS2card.Name = "labelDNS2card";
+            this.labelDNS2card.Size = new System.Drawing.Size(90, 13);
+            this.labelDNS2card.TabIndex = 59;
+            this.labelDNS2card.Text = "Secondary DNS :";
             // 
             // label19
             // 
@@ -772,86 +782,86 @@
             this.label19.TabIndex = 88;
             this.label19.Text = ".";
             // 
-            // label35
+            // labelDNS1card
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 109);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(73, 13);
-            this.label35.TabIndex = 58;
-            this.label35.Text = "Primary DNS :";
+            this.labelDNS1card.AutoSize = true;
+            this.labelDNS1card.Location = new System.Drawing.Point(6, 109);
+            this.labelDNS1card.Name = "labelDNS1card";
+            this.labelDNS1card.Size = new System.Drawing.Size(73, 13);
+            this.labelDNS1card.TabIndex = 58;
+            this.labelDNS1card.Text = "Primary DNS :";
             // 
-            // textBox1
+            // textBoxDNS2cardbyte4
             // 
-            this.textBox1.Location = new System.Drawing.Point(257, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(31, 20);
-            this.textBox1.TabIndex = 92;
-            this.textBox1.Text = "4";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS2cardbyte4.Location = new System.Drawing.Point(257, 132);
+            this.textBoxDNS2cardbyte4.Name = "textBoxDNS2cardbyte4";
+            this.textBoxDNS2cardbyte4.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2cardbyte4.TabIndex = 92;
+            this.textBoxDNS2cardbyte4.Text = "4";
+            this.textBoxDNS2cardbyte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label34
+            // labelGWcard
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 83);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(55, 13);
-            this.label34.TabIndex = 57;
-            this.label34.Text = "Gateway :";
+            this.labelGWcard.AutoSize = true;
+            this.labelGWcard.Location = new System.Drawing.Point(6, 83);
+            this.labelGWcard.Name = "labelGWcard";
+            this.labelGWcard.Size = new System.Drawing.Size(55, 13);
+            this.labelGWcard.TabIndex = 57;
+            this.labelGWcard.Text = "Gateway :";
             // 
-            // textBox2
+            // textBoxDNS2cardbyte3
             // 
-            this.textBox2.Location = new System.Drawing.Point(204, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(31, 20);
-            this.textBox2.TabIndex = 91;
-            this.textBox2.Text = "4";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS2cardbyte3.Location = new System.Drawing.Point(204, 132);
+            this.textBoxDNS2cardbyte3.Name = "textBoxDNS2cardbyte3";
+            this.textBoxDNS2cardbyte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2cardbyte3.TabIndex = 91;
+            this.textBoxDNS2cardbyte3.Text = "4";
+            this.textBoxDNS2cardbyte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label33
+            // labelMASKcard
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 57);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(81, 13);
-            this.label33.TabIndex = 56;
-            this.label33.Text = "Network mask :";
+            this.labelMASKcard.AutoSize = true;
+            this.labelMASKcard.Location = new System.Drawing.Point(6, 57);
+            this.labelMASKcard.Name = "labelMASKcard";
+            this.labelMASKcard.Size = new System.Drawing.Size(81, 13);
+            this.labelMASKcard.TabIndex = 56;
+            this.labelMASKcard.Text = "Network mask :";
             // 
-            // textBox3
+            // textBoxDNS2cardbyte2
             // 
-            this.textBox3.Location = new System.Drawing.Point(151, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(31, 20);
-            this.textBox3.TabIndex = 90;
-            this.textBox3.Text = "8";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS2cardbyte2.Location = new System.Drawing.Point(151, 132);
+            this.textBoxDNS2cardbyte2.Name = "textBoxDNS2cardbyte2";
+            this.textBoxDNS2cardbyte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2cardbyte2.TabIndex = 90;
+            this.textBoxDNS2cardbyte2.Text = "8";
+            this.textBoxDNS2cardbyte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // textBoxIPcardbyte1
             // 
-            this.textBox23.Location = new System.Drawing.Point(98, 28);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(31, 20);
-            this.textBox23.TabIndex = 61;
-            this.textBox23.Text = "192";
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxIPcardbyte1.Location = new System.Drawing.Point(98, 28);
+            this.textBoxIPcardbyte1.Name = "textBoxIPcardbyte1";
+            this.textBoxIPcardbyte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxIPcardbyte1.TabIndex = 61;
+            this.textBoxIPcardbyte1.Text = "192";
+            this.textBoxIPcardbyte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // textBoxDNS2cardbyte1
             // 
-            this.textBox4.Location = new System.Drawing.Point(98, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(31, 20);
-            this.textBox4.TabIndex = 89;
-            this.textBox4.Text = "8";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS2cardbyte1.Location = new System.Drawing.Point(98, 132);
+            this.textBoxDNS2cardbyte1.Name = "textBoxDNS2cardbyte1";
+            this.textBoxDNS2cardbyte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS2cardbyte1.TabIndex = 89;
+            this.textBoxDNS2cardbyte1.Text = "8";
+            this.textBoxDNS2cardbyte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // textBoxIPcardbyte2
             // 
-            this.textBox22.Location = new System.Drawing.Point(151, 28);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(31, 20);
-            this.textBox22.TabIndex = 62;
-            this.textBox22.Text = "168";
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxIPcardbyte2.Location = new System.Drawing.Point(151, 28);
+            this.textBoxIPcardbyte2.Name = "textBoxIPcardbyte2";
+            this.textBoxIPcardbyte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxIPcardbyte2.TabIndex = 62;
+            this.textBoxIPcardbyte2.Text = "168";
+            this.textBoxIPcardbyte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
@@ -862,14 +872,14 @@
             this.label20.TabIndex = 87;
             this.label20.Text = ".";
             // 
-            // textBox21
+            // textBoxIPcardbyte3
             // 
-            this.textBox21.Location = new System.Drawing.Point(204, 28);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(31, 20);
-            this.textBox21.TabIndex = 63;
-            this.textBox21.Text = "1";
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxIPcardbyte3.Location = new System.Drawing.Point(204, 28);
+            this.textBoxIPcardbyte3.Name = "textBoxIPcardbyte3";
+            this.textBoxIPcardbyte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxIPcardbyte3.TabIndex = 63;
+            this.textBoxIPcardbyte3.Text = "1";
+            this.textBoxIPcardbyte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -880,14 +890,14 @@
             this.label21.TabIndex = 86;
             this.label21.Text = ".";
             // 
-            // textBox20
+            // textBoxIPcardbyte4
             // 
-            this.textBox20.Location = new System.Drawing.Point(257, 28);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(31, 20);
-            this.textBox20.TabIndex = 64;
-            this.textBox20.Text = "2";
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxIPcardbyte4.Location = new System.Drawing.Point(257, 28);
+            this.textBoxIPcardbyte4.Name = "textBoxIPcardbyte4";
+            this.textBoxIPcardbyte4.Size = new System.Drawing.Size(31, 20);
+            this.textBoxIPcardbyte4.TabIndex = 64;
+            this.textBoxIPcardbyte4.Text = "2";
+            this.textBoxIPcardbyte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -907,14 +917,14 @@
             this.label31.TabIndex = 60;
             this.label31.Text = ".";
             // 
-            // textBox5
+            // textBoxDNS1cardbyte4
             // 
-            this.textBox5.Location = new System.Drawing.Point(257, 106);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(31, 20);
-            this.textBox5.TabIndex = 85;
-            this.textBox5.Text = "8";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS1cardbyte4.Location = new System.Drawing.Point(257, 106);
+            this.textBoxDNS1cardbyte4.Name = "textBoxDNS1cardbyte4";
+            this.textBoxDNS1cardbyte4.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS1cardbyte4.TabIndex = 85;
+            this.textBoxDNS1cardbyte4.Text = "8";
+            this.textBoxDNS1cardbyte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label30
             // 
@@ -925,14 +935,14 @@
             this.label30.TabIndex = 65;
             this.label30.Text = ".";
             // 
-            // textBox6
+            // textBoxDNS1cardbyte3
             // 
-            this.textBox6.Location = new System.Drawing.Point(204, 106);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(31, 20);
-            this.textBox6.TabIndex = 84;
-            this.textBox6.Text = "8";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS1cardbyte3.Location = new System.Drawing.Point(204, 106);
+            this.textBoxDNS1cardbyte3.Name = "textBoxDNS1cardbyte3";
+            this.textBoxDNS1cardbyte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS1cardbyte3.TabIndex = 84;
+            this.textBoxDNS1cardbyte3.Text = "8";
+            this.textBoxDNS1cardbyte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label29
             // 
@@ -943,41 +953,41 @@
             this.label29.TabIndex = 66;
             this.label29.Text = ".";
             // 
-            // textBox7
+            // textBoxDNS1cardbyte2
             // 
-            this.textBox7.Location = new System.Drawing.Point(151, 106);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(31, 20);
-            this.textBox7.TabIndex = 83;
-            this.textBox7.Text = "8";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS1cardbyte2.Location = new System.Drawing.Point(151, 106);
+            this.textBoxDNS1cardbyte2.Name = "textBoxDNS1cardbyte2";
+            this.textBoxDNS1cardbyte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS1cardbyte2.TabIndex = 83;
+            this.textBoxDNS1cardbyte2.Text = "8";
+            this.textBoxDNS1cardbyte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // textBoxMASKcardbyte1
             // 
-            this.textBox19.Location = new System.Drawing.Point(98, 54);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(31, 20);
-            this.textBox19.TabIndex = 68;
-            this.textBox19.Text = "255";
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMASKcardbyte1.Location = new System.Drawing.Point(98, 54);
+            this.textBoxMASKcardbyte1.Name = "textBoxMASKcardbyte1";
+            this.textBoxMASKcardbyte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxMASKcardbyte1.TabIndex = 68;
+            this.textBoxMASKcardbyte1.Text = "255";
+            this.textBoxMASKcardbyte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // textBoxDNS1cardbyte1
             // 
-            this.textBox8.Location = new System.Drawing.Point(98, 106);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(31, 20);
-            this.textBox8.TabIndex = 82;
-            this.textBox8.Text = "8";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxDNS1cardbyte1.Location = new System.Drawing.Point(98, 106);
+            this.textBoxDNS1cardbyte1.Name = "textBoxDNS1cardbyte1";
+            this.textBoxDNS1cardbyte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxDNS1cardbyte1.TabIndex = 82;
+            this.textBoxDNS1cardbyte1.Text = "8";
+            this.textBoxDNS1cardbyte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // textBoxMASKcardbyte2
             // 
-            this.textBox15.Location = new System.Drawing.Point(151, 54);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(31, 20);
-            this.textBox15.TabIndex = 69;
-            this.textBox15.Text = "255";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMASKcardbyte2.Location = new System.Drawing.Point(151, 54);
+            this.textBoxMASKcardbyte2.Name = "textBoxMASKcardbyte2";
+            this.textBoxMASKcardbyte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxMASKcardbyte2.TabIndex = 69;
+            this.textBoxMASKcardbyte2.Text = "255";
+            this.textBoxMASKcardbyte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -988,14 +998,14 @@
             this.label23.TabIndex = 80;
             this.label23.Text = ".";
             // 
-            // textBox14
+            // textBoxMASKcardbyte3
             // 
-            this.textBox14.Location = new System.Drawing.Point(204, 54);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(31, 20);
-            this.textBox14.TabIndex = 70;
-            this.textBox14.Text = "255";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMASKcardbyte3.Location = new System.Drawing.Point(204, 54);
+            this.textBoxMASKcardbyte3.Name = "textBoxMASKcardbyte3";
+            this.textBoxMASKcardbyte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxMASKcardbyte3.TabIndex = 70;
+            this.textBoxMASKcardbyte3.Text = "255";
+            this.textBoxMASKcardbyte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label24
             // 
@@ -1006,14 +1016,14 @@
             this.label24.TabIndex = 79;
             this.label24.Text = ".";
             // 
-            // textBox13
+            // textBoxMASKcardbyte4
             // 
-            this.textBox13.Location = new System.Drawing.Point(257, 54);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(31, 20);
-            this.textBox13.TabIndex = 71;
-            this.textBox13.Text = "0";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMASKcardbyte4.Location = new System.Drawing.Point(257, 54);
+            this.textBoxMASKcardbyte4.Name = "textBoxMASKcardbyte4";
+            this.textBoxMASKcardbyte4.Size = new System.Drawing.Size(31, 20);
+            this.textBoxMASKcardbyte4.TabIndex = 71;
+            this.textBoxMASKcardbyte4.Text = "0";
+            this.textBoxMASKcardbyte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -1033,14 +1043,14 @@
             this.label28.TabIndex = 67;
             this.label28.Text = ".";
             // 
-            // textBox9
+            // textBoxGWcardbyte4
             // 
-            this.textBox9.Location = new System.Drawing.Point(257, 80);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(31, 20);
-            this.textBox9.TabIndex = 78;
-            this.textBox9.Text = "254";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGWcardbyte4.Location = new System.Drawing.Point(257, 80);
+            this.textBoxGWcardbyte4.Name = "textBoxGWcardbyte4";
+            this.textBoxGWcardbyte4.Size = new System.Drawing.Size(31, 20);
+            this.textBoxGWcardbyte4.TabIndex = 78;
+            this.textBoxGWcardbyte4.Text = "254";
+            this.textBoxGWcardbyte4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
@@ -1051,14 +1061,14 @@
             this.label27.TabIndex = 72;
             this.label27.Text = ".";
             // 
-            // textBox10
+            // textBoxGWcardbyte3
             // 
-            this.textBox10.Location = new System.Drawing.Point(204, 80);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(31, 20);
-            this.textBox10.TabIndex = 77;
-            this.textBox10.Text = "1";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGWcardbyte3.Location = new System.Drawing.Point(204, 80);
+            this.textBoxGWcardbyte3.Name = "textBoxGWcardbyte3";
+            this.textBoxGWcardbyte3.Size = new System.Drawing.Size(31, 20);
+            this.textBoxGWcardbyte3.TabIndex = 77;
+            this.textBoxGWcardbyte3.Text = "1";
+            this.textBoxGWcardbyte3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
@@ -1069,23 +1079,23 @@
             this.label26.TabIndex = 73;
             this.label26.Text = ".";
             // 
-            // textBox11
+            // textBoxGWcardbyte2
             // 
-            this.textBox11.Location = new System.Drawing.Point(151, 80);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(31, 20);
-            this.textBox11.TabIndex = 76;
-            this.textBox11.Text = "168";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGWcardbyte2.Location = new System.Drawing.Point(151, 80);
+            this.textBoxGWcardbyte2.Name = "textBoxGWcardbyte2";
+            this.textBoxGWcardbyte2.Size = new System.Drawing.Size(31, 20);
+            this.textBoxGWcardbyte2.TabIndex = 76;
+            this.textBoxGWcardbyte2.Text = "168";
+            this.textBoxGWcardbyte2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // textBoxGWcardbyte1
             // 
-            this.textBox12.Location = new System.Drawing.Point(98, 80);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(31, 20);
-            this.textBox12.TabIndex = 75;
-            this.textBox12.Text = "192";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGWcardbyte1.Location = new System.Drawing.Point(98, 80);
+            this.textBoxGWcardbyte1.Name = "textBoxGWcardbyte1";
+            this.textBoxGWcardbyte1.Size = new System.Drawing.Size(31, 20);
+            this.textBoxGWcardbyte1.TabIndex = 75;
+            this.textBoxGWcardbyte1.Text = "192";
+            this.textBoxGWcardbyte1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBoxLEDstate
             // 
@@ -1157,12 +1167,62 @@
             this.checkBoxLEDstate.UseVisualStyleBackColor = true;
             this.checkBoxLEDstate.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // groupBoxAccount
+            // 
+            this.groupBoxAccount.Controls.Add(this.buttonPasswordChange);
+            this.groupBoxAccount.Location = new System.Drawing.Point(326, 346);
+            this.groupBoxAccount.Name = "groupBoxAccount";
+            this.groupBoxAccount.Size = new System.Drawing.Size(239, 85);
+            this.groupBoxAccount.TabIndex = 19;
+            this.groupBoxAccount.TabStop = false;
+            this.groupBoxAccount.Text = "Account informations";
+            // 
+            // buttonPasswordChange
+            // 
+            this.buttonPasswordChange.Location = new System.Drawing.Point(66, 38);
+            this.buttonPasswordChange.Name = "buttonPasswordChange";
+            this.buttonPasswordChange.Size = new System.Drawing.Size(112, 23);
+            this.buttonPasswordChange.TabIndex = 0;
+            this.buttonPasswordChange.Text = "Change password";
+            this.buttonPasswordChange.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxCMD
+            // 
+            this.groupBoxCMD.Controls.Add(this.buttonConnecTest);
+            this.groupBoxCMD.Controls.Add(this.labelICMPinfos);
+            this.groupBoxCMD.Location = new System.Drawing.Point(13, 437);
+            this.groupBoxCMD.Name = "groupBoxCMD";
+            this.groupBoxCMD.Size = new System.Drawing.Size(551, 231);
+            this.groupBoxCMD.TabIndex = 20;
+            this.groupBoxCMD.TabStop = false;
+            this.groupBoxCMD.Text = "Connectivity test";
+            // 
+            // buttonConnecTest
+            // 
+            this.buttonConnecTest.Location = new System.Drawing.Point(470, 202);
+            this.buttonConnecTest.Name = "buttonConnecTest";
+            this.buttonConnecTest.Size = new System.Drawing.Size(75, 23);
+            this.buttonConnecTest.TabIndex = 1;
+            this.buttonConnecTest.Text = "Launch";
+            this.buttonConnecTest.UseVisualStyleBackColor = true;
+            this.buttonConnecTest.Click += new System.EventHandler(this.buttonConnecTest_Click);
+            // 
+            // labelICMPinfos
+            // 
+            this.labelICMPinfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelICMPinfos.Location = new System.Drawing.Point(6, 16);
+            this.labelICMPinfos.Name = "labelICMPinfos";
+            this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
+            this.labelICMPinfos.TabIndex = 0;
+            // 
             // FormFourchipUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(577, 581);
+            this.ClientSize = new System.Drawing.Size(577, 693);
+            this.Controls.Add(this.groupBoxCMD);
+            this.Controls.Add(this.groupBoxAccount);
             this.Controls.Add(this.groupBoxLEDstate);
             this.Controls.Add(this.groupBoxCARDnic);
             this.Controls.Add(this.groupBoxBrightness);
@@ -1173,7 +1233,7 @@
             this.MaximizeBox = false;
             this.Name = "FormFourchipUserInterface";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Fourchip project";
+            this.Text = "Fourchips project";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormFourchipUserInterface_FormClosing);
             this.groupBoxPCnic.ResumeLayout(false);
             this.groupBoxPCnic.PerformLayout();
@@ -1190,6 +1250,8 @@
             this.groupBoxLEDstate.ResumeLayout(false);
             this.groupBoxLEDstate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.frequencySpinner)).EndInit();
+            this.groupBoxAccount.ResumeLayout(false);
+            this.groupBoxCMD.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1223,10 +1285,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBoxDNS2byte4;
+        private System.Windows.Forms.TextBox textBoxDNS2byte3;
+        private System.Windows.Forms.TextBox textBoxDNS2byte2;
+        private System.Windows.Forms.TextBox textBoxDNS2byte1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1254,49 +1316,54 @@
         private System.Windows.Forms.GroupBox groupBoxCARDnic;
         private System.Windows.Forms.Button buttonUpdateNICcard;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label labelIPcard;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label labelDNS2card;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label labelDNS1card;
+        private System.Windows.Forms.TextBox textBoxDNS2cardbyte4;
+        private System.Windows.Forms.Label labelGWcard;
+        private System.Windows.Forms.TextBox textBoxDNS2cardbyte3;
+        private System.Windows.Forms.Label labelMASKcard;
+        private System.Windows.Forms.TextBox textBoxDNS2cardbyte2;
+        private System.Windows.Forms.TextBox textBoxIPcardbyte1;
+        private System.Windows.Forms.TextBox textBoxDNS2cardbyte1;
+        private System.Windows.Forms.TextBox textBoxIPcardbyte2;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBoxIPcardbyte3;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBoxIPcardbyte4;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxDNS1cardbyte4;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxDNS1cardbyte3;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxDNS1cardbyte2;
+        private System.Windows.Forms.TextBox textBoxMASKcardbyte1;
+        private System.Windows.Forms.TextBox textBoxDNS1cardbyte1;
+        private System.Windows.Forms.TextBox textBoxMASKcardbyte2;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBoxMASKcardbyte3;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBoxMASKcardbyte4;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBoxGWcardbyte4;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBoxGWcardbyte3;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBoxGWcardbyte2;
+        private System.Windows.Forms.TextBox textBoxGWcardbyte1;
         private System.Windows.Forms.GroupBox groupBoxLEDstate;
         private System.Windows.Forms.NumericUpDown frequencySpinner;
         private System.Windows.Forms.Label labelLEDfreq;
         private System.Windows.Forms.Label labelLEDstate;
         private System.Windows.Forms.CheckBox checkBoxLEDstate;
+        private System.Windows.Forms.GroupBox groupBoxAccount;
+        private System.Windows.Forms.Button buttonPasswordChange;
+        private System.Windows.Forms.GroupBox groupBoxCMD;
+        private System.Windows.Forms.Label labelICMPinfos;
+        private System.Windows.Forms.Button buttonConnecTest;
     }
 }

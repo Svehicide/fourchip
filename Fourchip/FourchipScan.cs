@@ -107,7 +107,6 @@ namespace Fourchip
             try
             {
                 String data = serialPort.ReadLine();
-                Console.Write(data);
                 // code received is 01 ( Scan the card )
                 if (String.Compare(data.Substring(0, 4), Rs232_string.SCAN) == 0)
                 {

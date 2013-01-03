@@ -246,7 +246,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIMAAABhCAYAAAD1ERLvAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsEAAA7BAbiRa+0AABizSURBVHhe7Z15VBTH9sejAYOA
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsAAAA7AAWrWiQkAABizSURBVHhe7Z15VBTH9sejAYOA
         LIqIqIgbokZFYhQ3BNwNIaiIuCsqcSVGo+ICigaR4IpbFDck7qKCWxA3RKLYGiVuMWomJ3n5Iyfv90fO
         efknJ+f1r779ukl3zR0YYGYYHOacz9G+dae7qa6punXr3uq3RFGsow4JUliHbUIK67BNSGEdtgkprMM2
         IYV12CaksA7bhBTWYZuQQmsmP/9K44yMjL7z5y+YFhoamh4YGLinSROPfDc3twJXV9drDRs2LLKzs7uj
@@ -395,7 +395,7 @@
     <value>714, 269</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Fourchip project</value>
+    <value>Fourchips project</value>
   </data>
   <data name="&gt;&gt;serialPort.Name" xml:space="preserve">
     <value>serialPort</value>

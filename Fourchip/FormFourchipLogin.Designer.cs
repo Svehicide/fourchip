@@ -57,7 +57,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "FormFourchipLogin";
-            this.Text = "Fourchip project";
+            this.Text = "Fourchips project";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormFourchipLogin_FormClosing);
             this.ResumeLayout(false);
 

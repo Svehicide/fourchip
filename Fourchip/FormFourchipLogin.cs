@@ -68,6 +68,7 @@ namespace Fourchip
             try{
                 String data = serialPort.ReadLine();
 
+                Console.WriteLine(data);
                 // code received is 02 ( Enter the password )
                 if( String.Compare(data.Substring(0, 4), "#02@") ==0)
                 {
