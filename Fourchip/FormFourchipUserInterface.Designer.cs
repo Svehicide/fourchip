@@ -76,12 +76,12 @@
             this.textBoxIPbyte1 = new System.Windows.Forms.TextBox();
             this.buttonUpdateNICpc = new System.Windows.Forms.Button();
             this.labelAddress = new System.Windows.Forms.Label();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelChrono = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBoxTemp = new System.Windows.Forms.GroupBox();
             this.pictureBoxArrowDown = new System.Windows.Forms.PictureBox();
             this.pictureBoxArrowUp = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTempValue = new System.Windows.Forms.Label();
             this.groupBoxBrightness = new System.Windows.Forms.GroupBox();
             this.pictureBoxBrightness = new System.Windows.Forms.PictureBox();
             this.groupBoxCARDnic = new System.Windows.Forms.GroupBox();
@@ -132,10 +132,13 @@
             this.labelLEDstate = new System.Windows.Forms.Label();
             this.checkBoxLEDstate = new System.Windows.Forms.CheckBox();
             this.groupBoxAccount = new System.Windows.Forms.GroupBox();
+            this.buttonUsernameChange = new System.Windows.Forms.Button();
             this.buttonPasswordChange = new System.Windows.Forms.Button();
             this.groupBoxCMD = new System.Windows.Forms.GroupBox();
             this.buttonConnecTest = new System.Windows.Forms.Button();
             this.labelICMPinfos = new System.Windows.Forms.Label();
+            this.labelTemp = new System.Windows.Forms.Label();
+            this.labelBrightnessValue = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
@@ -149,6 +152,10 @@
             this.groupBoxAccount.SuspendLayout();
             this.groupBoxCMD.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // serialPort
+            // 
+            this.serialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort_DataReceived);
             // 
             // labelNICpc
             // 
@@ -601,16 +608,16 @@
             this.labelAddress.TabIndex = 4;
             this.labelAddress.Text = "IP address :";
             // 
-            // toolStripStatusLabel1
+            // toolStripStatusLabelChrono
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(105, 17);
-            this.toolStripStatusLabel1.Text = "Connection time : ";
+            this.toolStripStatusLabelChrono.Name = "toolStripStatusLabelChrono";
+            this.toolStripStatusLabelChrono.Size = new System.Drawing.Size(105, 17);
+            this.toolStripStatusLabelChrono.Text = "Connection time : ";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabelChrono});
             this.statusStrip1.Location = new System.Drawing.Point(0, 671);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(577, 22);
@@ -620,9 +627,10 @@
             // 
             // groupBoxTemp
             // 
+            this.groupBoxTemp.Controls.Add(this.labelTemp);
             this.groupBoxTemp.Controls.Add(this.pictureBoxArrowDown);
             this.groupBoxTemp.Controls.Add(this.pictureBoxArrowUp);
-            this.groupBoxTemp.Controls.Add(this.label1);
+            this.groupBoxTemp.Controls.Add(this.labelTempValue);
             this.groupBoxTemp.Location = new System.Drawing.Point(319, 51);
             this.groupBoxTemp.Name = "groupBoxTemp";
             this.groupBoxTemp.Size = new System.Drawing.Size(113, 179);
@@ -648,18 +656,19 @@
             this.pictureBoxArrowUp.TabIndex = 1;
             this.pictureBoxArrowUp.TabStop = false;
             // 
-            // label1
+            // labelTempValue
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "31 °C";
+            this.labelTempValue.AutoSize = true;
+            this.labelTempValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTempValue.Location = new System.Drawing.Point(23, 83);
+            this.labelTempValue.Name = "labelTempValue";
+            this.labelTempValue.Size = new System.Drawing.Size(38, 25);
+            this.labelTempValue.TabIndex = 0;
+            this.labelTempValue.Text = "31";
             // 
             // groupBoxBrightness
             // 
+            this.groupBoxBrightness.Controls.Add(this.labelBrightnessValue);
             this.groupBoxBrightness.Controls.Add(this.pictureBoxBrightness);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
@@ -1114,11 +1123,6 @@
             // 
             this.frequencySpinner.DecimalPlaces = 1;
             this.frequencySpinner.Enabled = false;
-            this.frequencySpinner.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
             this.frequencySpinner.Location = new System.Drawing.Point(125, 57);
             this.frequencySpinner.Maximum = new decimal(new int[] {
             10,
@@ -1126,18 +1130,19 @@
             0,
             0});
             this.frequencySpinner.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
-            65536});
+            0});
             this.frequencySpinner.Name = "frequencySpinner";
             this.frequencySpinner.Size = new System.Drawing.Size(60, 20);
             this.frequencySpinner.TabIndex = 3;
             this.frequencySpinner.Value = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
-            65536});
+            0});
+            this.frequencySpinner.ValueChanged += new System.EventHandler(this.frequencySpinner_ValueChanged);
             // 
             // labelLEDfreq
             // 
@@ -1169,6 +1174,7 @@
             // 
             // groupBoxAccount
             // 
+            this.groupBoxAccount.Controls.Add(this.buttonUsernameChange);
             this.groupBoxAccount.Controls.Add(this.buttonPasswordChange);
             this.groupBoxAccount.Location = new System.Drawing.Point(326, 346);
             this.groupBoxAccount.Name = "groupBoxAccount";
@@ -1177,9 +1183,18 @@
             this.groupBoxAccount.TabStop = false;
             this.groupBoxAccount.Text = "Account informations";
             // 
+            // buttonUsernameChange
+            // 
+            this.buttonUsernameChange.Location = new System.Drawing.Point(66, 24);
+            this.buttonUsernameChange.Name = "buttonUsernameChange";
+            this.buttonUsernameChange.Size = new System.Drawing.Size(112, 23);
+            this.buttonUsernameChange.TabIndex = 1;
+            this.buttonUsernameChange.Text = "Change username";
+            this.buttonUsernameChange.UseVisualStyleBackColor = true;
+            // 
             // buttonPasswordChange
             // 
-            this.buttonPasswordChange.Location = new System.Drawing.Point(66, 38);
+            this.buttonPasswordChange.Location = new System.Drawing.Point(66, 56);
             this.buttonPasswordChange.Name = "buttonPasswordChange";
             this.buttonPasswordChange.Size = new System.Drawing.Size(112, 23);
             this.buttonPasswordChange.TabIndex = 0;
@@ -1215,6 +1230,26 @@
             this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
             this.labelICMPinfos.TabIndex = 0;
             // 
+            // labelTemp
+            // 
+            this.labelTemp.AutoSize = true;
+            this.labelTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTemp.Location = new System.Drawing.Point(57, 83);
+            this.labelTemp.Name = "labelTemp";
+            this.labelTemp.Size = new System.Drawing.Size(37, 25);
+            this.labelTemp.TabIndex = 3;
+            this.labelTemp.Text = "C°";
+            // 
+            // labelBrightnessValue
+            // 
+            this.labelBrightnessValue.AutoSize = true;
+            this.labelBrightnessValue.Location = new System.Drawing.Point(37, 155);
+            this.labelBrightnessValue.Name = "labelBrightnessValue";
+            this.labelBrightnessValue.Size = new System.Drawing.Size(35, 13);
+            this.labelBrightnessValue.TabIndex = 1;
+            this.labelBrightnessValue.Text = "label1";
+            this.labelBrightnessValue.Visible = false;
+            // 
             // FormFourchipUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1244,6 +1279,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowUp)).EndInit();
             this.groupBoxBrightness.ResumeLayout(false);
+            this.groupBoxBrightness.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrightness)).EndInit();
             this.groupBoxCARDnic.ResumeLayout(false);
             this.groupBoxCARDnic.PerformLayout();
@@ -1268,12 +1304,12 @@
         private System.Windows.Forms.Label labelDNS2;
         private System.Windows.Forms.Button buttonDisconnected;
         private System.Windows.Forms.GroupBox groupBoxPCnic;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelChrono;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.Button buttonUpdateNICpc;
         private System.Windows.Forms.GroupBox groupBoxTemp;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTempValue;
         private System.Windows.Forms.GroupBox groupBoxBrightness;
         private System.Windows.Forms.PictureBox pictureBoxArrowDown;
         private System.Windows.Forms.PictureBox pictureBoxArrowUp;
@@ -1365,5 +1401,8 @@
         private System.Windows.Forms.GroupBox groupBoxCMD;
         private System.Windows.Forms.Label labelICMPinfos;
         private System.Windows.Forms.Button buttonConnecTest;
+        private System.Windows.Forms.Button buttonUsernameChange;
+        private System.Windows.Forms.Label labelTemp;
+        private System.Windows.Forms.Label labelBrightnessValue;
     }
 }

@@ -22,7 +22,7 @@ namespace Fourchip
         
         public const String LIGHT = "#05@";                     //#05@lightValue
         
-        public const String LED = "#06@";                       //#06@ledFreq
+        public const String LED = "#06@";                       //#06@ON or #06@OFF. If LED is on, next message will be #06@LedFreq
 
         public const String CHRONO = "#07@";                    //#07@hh;mm
     }
