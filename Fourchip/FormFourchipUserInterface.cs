@@ -556,7 +556,7 @@ namespace Fourchip
                        String infoString = data.Substring(4);
                        
                        //In function of the value, the image is changed to moon or sun
-                       if (int.Parse(infoString) < 20)
+                       if (int.Parse(infoString) < 50)
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
                        }
