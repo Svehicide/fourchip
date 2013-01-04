@@ -80,6 +80,7 @@ namespace Fourchip
         {
             if (serialPort.IsOpen == true)
             {
+                //Closing the serialPort if it is open
                 serialPort.Close();
             }
 
@@ -125,6 +126,9 @@ namespace Fourchip
             }
         }
 
+        //
+        //Method created to recover the serial port informations through an other form
+        //
         public SerialPort getserialPort { get; set; }
     
     }   

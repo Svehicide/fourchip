@@ -79,6 +79,7 @@
             this.toolStripStatusLabelChrono = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBoxTemp = new System.Windows.Forms.GroupBox();
+            this.labelTemp = new System.Windows.Forms.Label();
             this.pictureBoxArrowDown = new System.Windows.Forms.PictureBox();
             this.pictureBoxArrowUp = new System.Windows.Forms.PictureBox();
             this.labelTempValue = new System.Windows.Forms.Label();
@@ -127,6 +128,7 @@
             this.textBoxGWcardbyte2 = new System.Windows.Forms.TextBox();
             this.textBoxGWcardbyte1 = new System.Windows.Forms.TextBox();
             this.groupBoxLEDstate = new System.Windows.Forms.GroupBox();
+            this.labelHz = new System.Windows.Forms.Label();
             this.frequencySpinner = new System.Windows.Forms.NumericUpDown();
             this.labelLEDfreq = new System.Windows.Forms.Label();
             this.labelLEDstate = new System.Windows.Forms.Label();
@@ -137,8 +139,6 @@
             this.groupBoxCMD = new System.Windows.Forms.GroupBox();
             this.buttonConnecTest = new System.Windows.Forms.Button();
             this.labelICMPinfos = new System.Windows.Forms.Label();
-            this.labelTemp = new System.Windows.Forms.Label();
-            this.labelBrightnessValue = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
@@ -638,6 +638,16 @@
             this.groupBoxTemp.TabStop = false;
             this.groupBoxTemp.Text = "Temperature";
             // 
+            // labelTemp
+            // 
+            this.labelTemp.AutoSize = true;
+            this.labelTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTemp.Location = new System.Drawing.Point(57, 83);
+            this.labelTemp.Name = "labelTemp";
+            this.labelTemp.Size = new System.Drawing.Size(37, 25);
+            this.labelTemp.TabIndex = 3;
+            this.labelTemp.Text = "C°";
+            // 
             // pictureBoxArrowDown
             // 
             this.pictureBoxArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxArrowDown.Image")));
@@ -668,7 +678,6 @@
             // 
             // groupBoxBrightness
             // 
-            this.groupBoxBrightness.Controls.Add(this.labelBrightnessValue);
             this.groupBoxBrightness.Controls.Add(this.pictureBoxBrightness);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
@@ -1108,6 +1117,7 @@
             // 
             // groupBoxLEDstate
             // 
+            this.groupBoxLEDstate.Controls.Add(this.labelHz);
             this.groupBoxLEDstate.Controls.Add(this.frequencySpinner);
             this.groupBoxLEDstate.Controls.Add(this.labelLEDfreq);
             this.groupBoxLEDstate.Controls.Add(this.labelLEDstate);
@@ -1119,9 +1129,17 @@
             this.groupBoxLEDstate.TabStop = false;
             this.groupBoxLEDstate.Text = "LED";
             // 
+            // labelHz
+            // 
+            this.labelHz.AutoSize = true;
+            this.labelHz.Location = new System.Drawing.Point(178, 61);
+            this.labelHz.Name = "labelHz";
+            this.labelHz.Size = new System.Drawing.Size(20, 13);
+            this.labelHz.TabIndex = 4;
+            this.labelHz.Text = "Hz";
+            // 
             // frequencySpinner
             // 
-            this.frequencySpinner.DecimalPlaces = 1;
             this.frequencySpinner.Enabled = false;
             this.frequencySpinner.Location = new System.Drawing.Point(125, 57);
             this.frequencySpinner.Maximum = new decimal(new int[] {
@@ -1135,7 +1153,8 @@
             0,
             0});
             this.frequencySpinner.Name = "frequencySpinner";
-            this.frequencySpinner.Size = new System.Drawing.Size(60, 20);
+            this.frequencySpinner.ReadOnly = true;
+            this.frequencySpinner.Size = new System.Drawing.Size(47, 20);
             this.frequencySpinner.TabIndex = 3;
             this.frequencySpinner.Value = new decimal(new int[] {
             1,
@@ -1170,7 +1189,7 @@
             this.checkBoxLEDstate.Size = new System.Drawing.Size(15, 14);
             this.checkBoxLEDstate.TabIndex = 0;
             this.checkBoxLEDstate.UseVisualStyleBackColor = true;
-            this.checkBoxLEDstate.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBoxLEDstate.CheckedChanged += new System.EventHandler(this.checkBoxLEDState_CheckedChanged);
             // 
             // groupBoxAccount
             // 
@@ -1191,6 +1210,7 @@
             this.buttonUsernameChange.TabIndex = 1;
             this.buttonUsernameChange.Text = "Change username";
             this.buttonUsernameChange.UseVisualStyleBackColor = true;
+            this.buttonUsernameChange.Click += new System.EventHandler(this.buttonUsernameChange_Click);
             // 
             // buttonPasswordChange
             // 
@@ -1200,6 +1220,7 @@
             this.buttonPasswordChange.TabIndex = 0;
             this.buttonPasswordChange.Text = "Change password";
             this.buttonPasswordChange.UseVisualStyleBackColor = true;
+            this.buttonPasswordChange.Click += new System.EventHandler(this.buttonPasswordChange_Click);
             // 
             // groupBoxCMD
             // 
@@ -1230,26 +1251,6 @@
             this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
             this.labelICMPinfos.TabIndex = 0;
             // 
-            // labelTemp
-            // 
-            this.labelTemp.AutoSize = true;
-            this.labelTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTemp.Location = new System.Drawing.Point(57, 83);
-            this.labelTemp.Name = "labelTemp";
-            this.labelTemp.Size = new System.Drawing.Size(37, 25);
-            this.labelTemp.TabIndex = 3;
-            this.labelTemp.Text = "C°";
-            // 
-            // labelBrightnessValue
-            // 
-            this.labelBrightnessValue.AutoSize = true;
-            this.labelBrightnessValue.Location = new System.Drawing.Point(37, 155);
-            this.labelBrightnessValue.Name = "labelBrightnessValue";
-            this.labelBrightnessValue.Size = new System.Drawing.Size(35, 13);
-            this.labelBrightnessValue.TabIndex = 1;
-            this.labelBrightnessValue.Text = "label1";
-            this.labelBrightnessValue.Visible = false;
-            // 
             // FormFourchipUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1279,7 +1280,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowUp)).EndInit();
             this.groupBoxBrightness.ResumeLayout(false);
-            this.groupBoxBrightness.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrightness)).EndInit();
             this.groupBoxCARDnic.ResumeLayout(false);
             this.groupBoxCARDnic.PerformLayout();
@@ -1403,6 +1403,6 @@
         private System.Windows.Forms.Button buttonConnecTest;
         private System.Windows.Forms.Button buttonUsernameChange;
         private System.Windows.Forms.Label labelTemp;
-        private System.Windows.Forms.Label labelBrightnessValue;
+        private System.Windows.Forms.Label labelHz;
     }
 }
