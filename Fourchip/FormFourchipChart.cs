@@ -15,7 +15,7 @@ namespace Fourchip
         //
         //Form initialization
         //
-        public FormFourchipChart(int[] tab, int tabIndex,int chartType)
+        public FormFourchipChart(double[] tab, int tabIndex,int chartType)
         {
             int i = 0;
             
