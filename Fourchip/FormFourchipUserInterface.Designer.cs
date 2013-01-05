@@ -675,9 +675,9 @@
             this.labelTempValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTempValue.Location = new System.Drawing.Point(6, 83);
             this.labelTempValue.Name = "labelTempValue";
-            this.labelTempValue.Size = new System.Drawing.Size(38, 25);
+            this.labelTempValue.Size = new System.Drawing.Size(66, 25);
             this.labelTempValue.TabIndex = 0;
-            this.labelTempValue.Text = "31";
+            this.labelTempValue.Text = "-00.0";
             this.labelTempValue.Click += new System.EventHandler(this.labelTempValue_Click);
             // 
             // groupBoxBrightness
@@ -696,7 +696,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(82, 141);
+            this.label32.Location = new System.Drawing.Point(71, 141);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(24, 20);
             this.label32.TabIndex = 2;
@@ -706,10 +706,11 @@
             // 
             this.labelBrightnessValue.AutoSize = true;
             this.labelBrightnessValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBrightnessValue.Location = new System.Drawing.Point(8, 141);
+            this.labelBrightnessValue.Location = new System.Drawing.Point(21, 141);
             this.labelBrightnessValue.Name = "labelBrightnessValue";
-            this.labelBrightnessValue.Size = new System.Drawing.Size(0, 20);
+            this.labelBrightnessValue.Size = new System.Drawing.Size(44, 20);
             this.labelBrightnessValue.TabIndex = 1;
+            this.labelBrightnessValue.Text = "00.0";
             this.labelBrightnessValue.Click += new System.EventHandler(this.labelBrightnessValue_Click);
             // 
             // pictureBoxBrightness
@@ -1293,6 +1294,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBoxPCnic);
             this.Controls.Add(this.buttonDisconnected);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormFourchipUserInterface";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
