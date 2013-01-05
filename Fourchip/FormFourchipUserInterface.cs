@@ -136,7 +136,6 @@ namespace Fourchip
                 frequencySpinner.Enabled = false;
                 frequencySpinner.Value = 1;
                 //Sending the default LED blinking value and a "LED OFF" signal
-                serialPort.WriteLine(Rs232_string.LED + "1\n");
                 serialPort.WriteLine(Rs232_string.LED + "OFF\n");
             }
         }
