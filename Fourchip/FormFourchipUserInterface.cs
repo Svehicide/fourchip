@@ -21,8 +21,8 @@ namespace Fourchip
     {
         Form owner;
 
-        int[] tempChart = new int[15];
-        int[] brightChart = new int[15];
+        double[] tempChart = new double[15];
+        double[] brightChart = new double[15];
 
         int tabTempIndex = 0;
         int tabBrightIndex = 0;
@@ -533,7 +533,7 @@ namespace Fourchip
                    String infoString = data.Substring(4);
 
                    //Comparing the received value to the actual one
-                   if (int.Parse(infoString) < int.Parse(labelTempValue.Text))
+                   if (double.Parse(infoString) < double.Parse(labelTempValue.Text))
                    {
                        //lighting the right arrow
                        pictureBoxArrowUp.Image = Fourchip.Properties.Resources.arrow_darkgreen;
@@ -542,7 +542,7 @@ namespace Fourchip
                    }
                    else
                    {
-                       if (int.Parse(infoString) > int.Parse(labelTempValue.Text))
+                       if (double.Parse(infoString) > double.Parse(labelTempValue.Text))
                        {
                            pictureBoxArrowDown.Image = Fourchip.Properties.Resources.arrow_darkred;
                            pictureBoxArrowUp.Image = Fourchip.Properties.Resources.arrow_green;
@@ -559,7 +559,7 @@ namespace Fourchip
                    //Adding values to display in the chart
                    if (tabTempIndex < 15)
                    {
-                       tempChart[tabTempIndex] = int.Parse(infoString);
+                       tempChart[tabTempIndex] = double.Parse(infoString);
                        tabTempIndex++;
                    }
                    else
@@ -571,7 +571,7 @@ namespace Fourchip
                            tempChart[j] = 0;
                            j++;
                        }
-                        tempChart[tabTempIndex] = int.Parse(infoString);
+                        tempChart[tabTempIndex] = double.Parse(infoString);
                    }
                }
                else
@@ -583,7 +583,7 @@ namespace Fourchip
                        String infoString = data.Substring(4);
                        
                        //In function of the value, the image is changed to moon or sun
-                       if (int.Parse(infoString) < 50)
+                       if (double.Parse(infoString) < 50.0)
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
                        }
@@ -595,7 +595,7 @@ namespace Fourchip
                        //Adding values to display in the chart
                        if (tabBrightIndex < 15)
                        {
-                           brightChart[tabBrightIndex] = int.Parse(infoString);
+                           brightChart[tabBrightIndex] = double.Parse(infoString);
                            tabBrightIndex++;
                        }
                        else
@@ -607,7 +607,7 @@ namespace Fourchip
                                brightChart[j] = 0;
                                j++;
                            }
-                           brightChart[tabBrightIndex] = int.Parse(infoString);
+                           brightChart[tabBrightIndex] = double.Parse(infoString);
                        }
                    }
                    else
