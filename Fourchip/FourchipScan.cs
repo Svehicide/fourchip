@@ -131,6 +131,9 @@ namespace Fourchip
         //
         public SerialPort getserialPort { get; set; }
 
+        //
+        //When Exit button is clicked, the program tells the card that nobody is connected to it
+        //
         private void FormFourchipScan_FormClosing(object sender, FormClosingEventArgs e)
         {
             if( serialPort.IsOpen == true){

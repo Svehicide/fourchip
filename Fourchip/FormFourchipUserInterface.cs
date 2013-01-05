@@ -61,6 +61,7 @@ namespace Fourchip
             //setting default values on Form creation
             labelTempValue.Text = "0";
             pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
+
             //By default, no NIC is selected, there is no need to modify the IP on an "non-existant" NIC
             textBoxIPbyte1.Enabled = false;
             textBoxIPbyte2.Enabled = false;
@@ -150,6 +151,7 @@ namespace Fourchip
             IPAddress[] dnsList = new IPAddress[2];
             int i = 0;
 
+            //Enabling IP and MASK boxes
             textBoxIPbyte1.Enabled = true;
             textBoxIPbyte2.Enabled = true;
             textBoxIPbyte3.Enabled = true;
