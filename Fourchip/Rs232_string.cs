@@ -25,16 +25,10 @@ namespace Fourchip
 
         public const String CHRONO = "#07@";                    //#07@hh;mm
 
-        public const String USER_CHANGE = "#81@";               //#81@Ludovic Calmant
+        public const String USER_CHANGE = "#81@";               //#81@Ludovic Calmant ( send to card ), #81@1 ( OK ) or #81@0 ( NOK ) ( receive from the card )
         public const String PW_CHANGE = "#82@";                 //#82@
         public const String PW_ACK = "#82@";                    //#82@1 (OK) or #82@0 (NOK)
         
         public const String GOODBYE = "#99@";                   //#99@
-
-        
-
-        
-
-        
     }
 }

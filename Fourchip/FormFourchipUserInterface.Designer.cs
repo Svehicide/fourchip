@@ -79,7 +79,6 @@
             this.toolStripStatusLabelChrono = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.groupBoxTemp = new System.Windows.Forms.GroupBox();
-            this.labelTemp = new System.Windows.Forms.Label();
             this.pictureBoxArrowDown = new System.Windows.Forms.PictureBox();
             this.pictureBoxArrowUp = new System.Windows.Forms.PictureBox();
             this.labelTempValue = new System.Windows.Forms.Label();
@@ -139,6 +138,7 @@
             this.groupBoxCMD = new System.Windows.Forms.GroupBox();
             this.buttonConnecTest = new System.Windows.Forms.Button();
             this.labelICMPinfos = new System.Windows.Forms.Label();
+            this.labelTemp = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
@@ -638,16 +638,6 @@
             this.groupBoxTemp.TabStop = false;
             this.groupBoxTemp.Text = "Temperature";
             // 
-            // labelTemp
-            // 
-            this.labelTemp.AutoSize = true;
-            this.labelTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTemp.Location = new System.Drawing.Point(57, 83);
-            this.labelTemp.Name = "labelTemp";
-            this.labelTemp.Size = new System.Drawing.Size(37, 25);
-            this.labelTemp.TabIndex = 3;
-            this.labelTemp.Text = "C°";
-            // 
             // pictureBoxArrowDown
             // 
             this.pictureBoxArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxArrowDown.Image")));
@@ -675,6 +665,7 @@
             this.labelTempValue.Size = new System.Drawing.Size(38, 25);
             this.labelTempValue.TabIndex = 0;
             this.labelTempValue.Text = "31";
+            this.labelTempValue.Click += new System.EventHandler(this.labelTempValue_Click);
             // 
             // groupBoxBrightness
             // 
@@ -694,6 +685,7 @@
             this.pictureBoxBrightness.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxBrightness.TabIndex = 0;
             this.pictureBoxBrightness.TabStop = false;
+            this.pictureBoxBrightness.Click += new System.EventHandler(this.pictureBoxBrightness_Click);
             // 
             // groupBoxCARDnic
             // 
@@ -1251,6 +1243,17 @@
             this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
             this.labelICMPinfos.TabIndex = 0;
             // 
+            // labelTemp
+            // 
+            this.labelTemp.AutoSize = true;
+            this.labelTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTemp.Location = new System.Drawing.Point(57, 83);
+            this.labelTemp.Name = "labelTemp";
+            this.labelTemp.Size = new System.Drawing.Size(37, 25);
+            this.labelTemp.TabIndex = 3;
+            this.labelTemp.Text = "C°";
+            this.labelTemp.Click += new System.EventHandler(this.labelTemp_Click);
+            // 
             // FormFourchipUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1402,7 +1405,7 @@
         private System.Windows.Forms.Label labelICMPinfos;
         private System.Windows.Forms.Button buttonConnecTest;
         private System.Windows.Forms.Button buttonUsernameChange;
-        private System.Windows.Forms.Label labelTemp;
         private System.Windows.Forms.Label labelHz;
+        private System.Windows.Forms.Label labelTemp;
     }
 }

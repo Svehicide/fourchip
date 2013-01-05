@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormFourchipChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFourchipChart.Designer.cs">
+      <DependentUpon>FormFourchipChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFourchipLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +82,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Rs232_string.cs" />
+    <EmbeddedResource Include="FormFourchipChart.resx">
+      <DependentUpon>FormFourchipChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFourchipLogin.resx">
       <DependentUpon>FormFourchipLogin.cs</DependentUpon>
     </EmbeddedResource>

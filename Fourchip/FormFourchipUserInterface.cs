@@ -13,12 +13,21 @@ using System.Threading;
 using System.Text.RegularExpressions;
 using System.Management;
 using Microsoft.VisualBasic;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Fourchip
 {
     public partial class FormFourchipUserInterface : Form
     {
         Form owner;
+
+        int[] tempChart = new int[15];
+        int[] brightChart = new int[15];
+
+        int tabTempIndex = 0;
+        int tabBrightIndex = 0;
+
+        int j = 0;
 
         //
         //Form initialization
@@ -546,6 +555,24 @@ namespace Fourchip
                            pictureBoxArrowDown.Image = Fourchip.Properties.Resources.arrow_darkred;
                        }
                    }
+
+                   //Adding values to display in the chart
+                   if (tabTempIndex < 15)
+                   {
+                       tempChart[tabTempIndex] = int.Parse(infoString);
+                       tabTempIndex++;
+                   }
+                   else
+                   {
+                       tabTempIndex = 0;
+                       int j = 0;
+                       while (j < 15)
+                       {
+                           tempChart[j] = 0;
+                           j++;
+                       }
+                        tempChart[tabTempIndex] = int.Parse(infoString);
+                   }
                }
                else
                {
@@ -563,6 +590,24 @@ namespace Fourchip
                        else
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.sun;
+                       }
+
+                       //Adding values to display in the chart
+                       if (tabBrightIndex < 15)
+                       {
+                           brightChart[tabBrightIndex] = int.Parse(infoString);
+                           tabBrightIndex++;
+                       }
+                       else
+                       {
+                           tabBrightIndex = 0;
+                           int j = 0;
+                           while (j < 15)
+                           {
+                               brightChart[j] = 0;
+                               j++;
+                           }
+                           brightChart[tabBrightIndex] = int.Parse(infoString);
                        }
                    }
                    else
@@ -591,6 +636,29 @@ namespace Fourchip
                                else
                                {
                                    System.Windows.Forms.MessageBox.Show("Password successfully changed");
+                               }
+                               //Enabling the "change password" button
+                               buttonPasswordChange.Enabled = true;
+                           }
+                           else
+                           {
+                               //code received is 81 ( USER_CHANGE ack )
+                               if (String.Compare(data.Substring(0, 4), Rs232_string.USER_CHANGE) == 0)
+                               {
+                                   //Removing the code part
+                                   String infoString = data.Substring(4);
+
+                                   //Handling the USER_CHANGE ack
+                                   if (String.Compare(infoString, "0") == 0)
+                                   {
+                                       System.Windows.Forms.MessageBox.Show("Username change has occured an error.\n\nRestart username change procedure by clicking \"Change username\" again.");
+                                   }
+                                   else
+                                   {
+                                       System.Windows.Forms.MessageBox.Show("Username successfully changed");
+                                   }
+                                   //Enabling the "change username" button
+                                   buttonUsernameChange.Enabled = true;
                                }
                            }
                        }
@@ -634,7 +702,9 @@ namespace Fourchip
            }
            else
            {
+               System.Windows.Forms.MessageBox.Show("Please keep the card on the top of the RFID reader during the operation");
                serialPort.WriteLine(Rs232_string.USER_CHANGE + firstname + " " + name);
+               buttonUsernameChange.Enabled = false;
            }
        }
 
@@ -643,8 +713,37 @@ namespace Fourchip
         //
         private void buttonPasswordChange_Click(object sender, EventArgs e)
        {
+           System.Windows.Forms.MessageBox.Show("Please enter your password on the card's keyboard and finish by pressing CENTER");
            //Sending a PW_CHANGE request to the card
            serialPort.WriteLine(Rs232_string.PW_CHANGE);
+           buttonPasswordChange.Enabled = false;
        }
+
+        //
+        //Display a temperature chart when clicking on the temperature
+        //
+        private void labelTempValue_Click(object sender, EventArgs e)
+        {
+            FormFourchipChart formFourchipChart = new FormFourchipChart(tempChart,tabTempIndex,1);
+            formFourchipChart.ShowDialog();
+        }
+
+        //
+        //Display a brightness chart when clicking on the sun/moon image
+        //
+        private void pictureBoxBrightness_Click(object sender, EventArgs e)
+        {
+            FormFourchipChart formFourchipChart = new FormFourchipChart(brightChart, tabBrightIndex, 2);
+            formFourchipChart.ShowDialog();
+        }
+
+        //
+        //Display a temperature chart when clicking on the temperature symbol
+        //
+        private void labelTemp_Click(object sender, EventArgs e)
+        {
+            FormFourchipChart formFourchipChart = new FormFourchipChart(tempChart, tabTempIndex, 1);
+            formFourchipChart.ShowDialog();
+        }
     }
 }
