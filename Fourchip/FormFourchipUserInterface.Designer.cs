@@ -139,6 +139,8 @@
             this.groupBoxCMD = new System.Windows.Forms.GroupBox();
             this.buttonConnecTest = new System.Windows.Forms.Button();
             this.labelICMPinfos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBoxTemp.SuspendLayout();
@@ -680,6 +682,8 @@
             // 
             // groupBoxBrightness
             // 
+            this.groupBoxBrightness.Controls.Add(this.label32);
+            this.groupBoxBrightness.Controls.Add(this.label1);
             this.groupBoxBrightness.Controls.Add(this.pictureBoxBrightness);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
@@ -691,7 +695,7 @@
             // pictureBoxBrightness
             // 
             this.pictureBoxBrightness.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBrightness.Image")));
-            this.pictureBoxBrightness.Location = new System.Drawing.Point(6, 42);
+            this.pictureBoxBrightness.Location = new System.Drawing.Point(6, 20);
             this.pictureBoxBrightness.Name = "pictureBoxBrightness";
             this.pictureBoxBrightness.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxBrightness.TabIndex = 0;
@@ -1254,6 +1258,26 @@
             this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
             this.labelICMPinfos.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(82, 141);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(24, 20);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "%";
+            // 
             // FormFourchipUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1283,6 +1307,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArrowUp)).EndInit();
             this.groupBoxBrightness.ResumeLayout(false);
+            this.groupBoxBrightness.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrightness)).EndInit();
             this.groupBoxCARDnic.ResumeLayout(false);
             this.groupBoxCARDnic.PerformLayout();
@@ -1407,5 +1432,7 @@
         private System.Windows.Forms.Button buttonUsernameChange;
         private System.Windows.Forms.Label labelHz;
         private System.Windows.Forms.Label labelTemp;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label1;
     }
 }

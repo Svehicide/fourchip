@@ -59,7 +59,7 @@ namespace Fourchip
             }
 
             //setting default values on Form creation
-            comboBoxNIC.SelectedIndex = 1;
+            //comboBoxNIC.SelectedIndex = 1;
             labelTempValue.Text = "0";
             pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
         }
