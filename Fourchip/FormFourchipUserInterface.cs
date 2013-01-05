@@ -59,9 +59,33 @@ namespace Fourchip
             }
 
             //setting default values on Form creation
-            //comboBoxNIC.SelectedIndex = 1;
             labelTempValue.Text = "0";
             pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
+            //By default, no NIC is selected, there is no need to modify the IP on an "non-existant" NIC
+            textBoxIPbyte1.Enabled = false;
+            textBoxIPbyte2.Enabled = false;
+            textBoxIPbyte3.Enabled = false;
+            textBoxIPbyte4.Enabled = false;
+
+            textBoxMASKbyte1.Enabled = false;
+            textBoxMASKbyte2.Enabled = false;
+            textBoxMASKbyte3.Enabled = false;
+            textBoxMASKbyte4.Enabled = false;
+
+            textBoxGWbyte1.Enabled = false;
+            textBoxGWbyte2.Enabled = false;
+            textBoxGWbyte3.Enabled = false;
+            textBoxGWbyte4.Enabled = false;
+
+            textBoxDNS1byte1.Enabled = false;
+            textBoxDNS1byte2.Enabled = false;
+            textBoxDNS1byte3.Enabled = false;
+            textBoxDNS1byte4.Enabled = false;
+
+            textBoxDNS2byte1.Enabled = false;
+            textBoxDNS2byte2.Enabled = false;
+            textBoxDNS2byte3.Enabled = false;
+            textBoxDNS2byte4.Enabled = false;
         }
 
         //
@@ -127,6 +151,15 @@ namespace Fourchip
             IPAddress[] dnsList = new IPAddress[2];
             int i = 0;
 
+            textBoxIPbyte1.Enabled = true;
+            textBoxIPbyte2.Enabled = true;
+            textBoxIPbyte3.Enabled = true;
+            textBoxIPbyte4.Enabled = true;
+
+            textBoxMASKbyte1.Enabled = true;
+            textBoxMASKbyte2.Enabled = true;
+            textBoxMASKbyte3.Enabled = true;
+            textBoxMASKbyte4.Enabled = true;
 
             //Getting the NIC list
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
@@ -592,12 +625,12 @@ namespace Fourchip
                        if (double.Parse(infoString) < 50.0)
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
-                           labelBrightness.Text = infoString;
+                           labelBrightnessValue.Text = infoString;
                        }
                        else
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.sun;
-                           labelBrightness.Text = infoString;
+                           labelBrightnessValue.Text = infoString;
                        }
 
                        //Adding values to display in the chart
@@ -751,6 +784,15 @@ namespace Fourchip
         private void labelTemp_Click(object sender, EventArgs e)
         {
             FormFourchipChart formFourchipChart = new FormFourchipChart(tempChart, tabTempIndex, 1);
+            formFourchipChart.ShowDialog();
+        }
+
+        //
+        //Display a brightness chart when clicking on the brightness value
+        //
+        private void labelBrightnessValue_Click(object sender, EventArgs e)
+        {
+            FormFourchipChart formFourchipChart = new FormFourchipChart(brightChart, tabBrightIndex, 2);
             formFourchipChart.ShowDialog();
         }
     }
