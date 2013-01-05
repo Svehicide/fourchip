@@ -130,6 +130,13 @@ namespace Fourchip
         //Method created to recover the serial port informations through an other form
         //
         public SerialPort getserialPort { get; set; }
+
+        private void FormFourchipScan_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if( serialPort.IsOpen == true){
+            serialPort.Write("#99@");
+            }
+        }
     
     }   
 }

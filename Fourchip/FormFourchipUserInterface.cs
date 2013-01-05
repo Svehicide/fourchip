@@ -59,7 +59,7 @@ namespace Fourchip
             }
 
             //setting default values on Form creation
-            comboBoxNIC.SelectedIndex = 0;
+            comboBoxNIC.SelectedIndex = 1;
             labelTempValue.Text = "0";
             pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
         }
@@ -69,6 +69,7 @@ namespace Fourchip
         //
         private void FormFourchipUserInterface_FormClosing(object sender, FormClosingEventArgs e)
         {
+                //serialPort.Write("#99@");
                 //destroying the form
                 this.Dispose();
                 //exiting the application
@@ -526,12 +527,14 @@ namespace Fourchip
            {
                //Reading the buffer
                String data = serialPort.ReadLine();
+               Console.Write(data+"\n");
+
                // code received is 04 ( Temperature )
                if (String.Compare(data.Substring(0, 4), Rs232_string.TEMP) == 0)
                {
                    //removing the code part
                    String infoString = data.Substring(4);
-
+                   
                    //Comparing the received value to the actual one
                    if (double.Parse(infoString) < double.Parse(labelTempValue.Text))
                    {
