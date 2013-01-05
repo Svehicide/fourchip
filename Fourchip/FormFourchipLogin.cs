@@ -48,13 +48,15 @@ namespace Fourchip
         {
             if (formFourchipUserInterface != null)
             {
-                //serialPort.Write("#99@");
                 //The UserInterface is visible and the Login window has to be closed
                 this.Dispose();
             }
             else
             {
-                //serialPort.Write("#99@");
+                if (serialPort.IsOpen == true)
+                {
+                    serialPort.Write("#99@");
+                }
                 //The UserInterface is not visible
                 this.Dispose();
                 Application.Restart();

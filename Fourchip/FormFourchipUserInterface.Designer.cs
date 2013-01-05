@@ -139,7 +139,7 @@
             this.groupBoxCMD = new System.Windows.Forms.GroupBox();
             this.buttonConnecTest = new System.Windows.Forms.Button();
             this.labelICMPinfos = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelBrightness = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.groupBoxPCnic.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -683,7 +683,7 @@
             // groupBoxBrightness
             // 
             this.groupBoxBrightness.Controls.Add(this.label32);
-            this.groupBoxBrightness.Controls.Add(this.label1);
+            this.groupBoxBrightness.Controls.Add(this.labelBrightness);
             this.groupBoxBrightness.Controls.Add(this.pictureBoxBrightness);
             this.groupBoxBrightness.Location = new System.Drawing.Point(452, 51);
             this.groupBoxBrightness.Name = "groupBoxBrightness";
@@ -1258,15 +1258,15 @@
             this.labelICMPinfos.Size = new System.Drawing.Size(539, 183);
             this.labelICMPinfos.TabIndex = 0;
             // 
-            // label1
+            // labelBrightness
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.labelBrightness.AutoSize = true;
+            this.labelBrightness.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBrightness.Location = new System.Drawing.Point(8, 141);
+            this.labelBrightness.Name = "labelBrightness";
+            this.labelBrightness.Size = new System.Drawing.Size(57, 20);
+            this.labelBrightness.TabIndex = 1;
+            this.labelBrightness.Text = "label1";
             // 
             // label32
             // 
@@ -1433,6 +1433,6 @@
         private System.Windows.Forms.Label labelHz;
         private System.Windows.Forms.Label labelTemp;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelBrightness;
     }
 }

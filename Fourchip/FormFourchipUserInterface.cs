@@ -69,7 +69,10 @@ namespace Fourchip
         //
         private void FormFourchipUserInterface_FormClosing(object sender, FormClosingEventArgs e)
         {
-                //serialPort.Write("#99@");
+                if (serialPort.IsOpen == true)
+                {
+                serialPort.Write("#99@");
+                }
                 //destroying the form
                 this.Dispose();
                 //exiting the application
@@ -589,10 +592,12 @@ namespace Fourchip
                        if (double.Parse(infoString) < 50.0)
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.moon;
+                           labelBrightness.Text = infoString;
                        }
                        else
                        {
                            pictureBoxBrightness.Image = Fourchip.Properties.Resources.sun;
+                           labelBrightness.Text = infoString;
                        }
 
                        //Adding values to display in the chart
