@@ -526,23 +526,23 @@ namespace Fourchip
 
                //Sending a 31 ( IP card update ) command to the card with its IP address
                serialPort.WriteLine("#31@" + textBoxIPcardbyte1.Text + "." + textBoxIPcardbyte2.Text + "." + textBoxIPcardbyte3.Text + "." + textBoxIPcardbyte4.Text);
-               System.Threading.Thread.Sleep(10);
+               System.Threading.Thread.Sleep(200);
 
                //Sending a 32 ( Mask card update ) command to the card with its Mask
                serialPort.WriteLine("#32@" + textBoxMASKcardbyte1.Text + "." + textBoxMASKcardbyte2.Text + "." + textBoxMASKcardbyte3.Text + "." + textBoxMASKcardbyte4.Text);
-               System.Threading.Thread.Sleep(10);
-
+               System.Threading.Thread.Sleep(200);
+               
                //Sending a 33 ( Gateway card update ) command to the card with its gateway address
                serialPort.WriteLine("#33@" + textBoxGWcardbyte1.Text + "." + textBoxGWcardbyte2.Text + "." + textBoxGWcardbyte3.Text + "." + textBoxGWcardbyte4.Text);
-               System.Threading.Thread.Sleep(10);
+               System.Threading.Thread.Sleep(200);
 
                //Sending a 34 ( Primary DNS card update ) command to the card with its dns address
                serialPort.WriteLine("#34@" + textBoxDNS1cardbyte1.Text + "." + textBoxDNS1cardbyte2.Text + "." + textBoxDNS1cardbyte3.Text + "." + textBoxDNS1cardbyte4.Text);
-               System.Threading.Thread.Sleep(10);
+               System.Threading.Thread.Sleep(200);
 
                //Sending a 35 ( Secondary DNS card update ) command to the card with its dns address
                serialPort.WriteLine("#35@" + textBoxDNS2cardbyte1.Text + "." + textBoxDNS2cardbyte2.Text + "." + textBoxDNS2cardbyte3.Text + "." + textBoxDNS2cardbyte4.Text);
-               System.Threading.Thread.Sleep(10);
+               System.Threading.Thread.Sleep(200);
 
                //Prompting the user to tell him that the configuration has been correctly changed
                System.Windows.Forms.MessageBox.Show("The card's IP configuration has been changed.");
