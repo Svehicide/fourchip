@@ -31,6 +31,8 @@ namespace Fourchip
                 Series series = chart.Series.Add("Temperature ( C° )");
                 //Setting the chart to a 3D Spline view
                 series.ChartType = SeriesChartType.Spline;
+                series.IsValueShownAsLabel = true;
+
                 //Adding the first value of the tab to the chart ( prevent chart from being not displayed )
                 series.Points.Add(tab[0]);
                 //Adding values to the chart
