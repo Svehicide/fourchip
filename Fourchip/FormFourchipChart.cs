@@ -27,8 +27,6 @@ namespace Fourchip
             //Depending on the chart to be displayed ( Temp or Brightness )
             if (chartType == 1)
             {
-                chart.ChartAreas[0].AxisY.Maximum = 50;
-                chart.ChartAreas[0].AxisY.Minimum = -10;
                 //Adding a link between all the values
                 Series series = chart.Series.Add("Temperature ( C° )");
                 //Setting the chart to a 3D Spline view
