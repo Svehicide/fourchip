@@ -746,7 +746,6 @@ namespace Fourchip
            {
                System.Windows.Forms.MessageBox.Show("Please keep the card on the top of the RFID reader during the operation");
                serialPort.WriteLine(Rs232_string.USER_CHANGE + firstname + " " + name);
-               buttonUsernameChange.Enabled = false;
            }
        }
 
